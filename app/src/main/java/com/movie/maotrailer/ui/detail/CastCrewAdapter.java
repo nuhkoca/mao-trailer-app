@@ -69,6 +69,7 @@ public class CastCrewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         void bindTo(Cast cast) {
             castCardBinding.setVariable(BR.profileImage, cast.getProfilePath());
             castCardBinding.setVariable(BR.castName, cast.getName());
+            castCardBinding.tvCrewJob.setVisibility(View.INVISIBLE);
             castCardBinding.executePendingBindings();
         }
 
@@ -76,6 +77,7 @@ public class CastCrewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             castCardBinding.setVariable(BR.profileImage, crew.getProfilePath());
             castCardBinding.setVariable(BR.castName, crew.getName());
             castCardBinding.setVariable(BR.crewJob, crew.getJob());
+            castCardBinding.tvCrewJob.setVisibility(View.VISIBLE);
             castCardBinding.executePendingBindings();
         }
     }

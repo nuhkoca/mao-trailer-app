@@ -19,6 +19,9 @@ public abstract class CastCardBinding extends ViewDataBinding {
   @NonNull
   public final TextView tvCastName;
 
+  @NonNull
+  public final TextView tvCrewJob;
+
   @Bindable
   protected String mProfileImage;
 
@@ -29,10 +32,11 @@ public abstract class CastCardBinding extends ViewDataBinding {
   protected String mCrewJob;
 
   protected CastCardBinding(DataBindingComponent _bindingComponent, View _root,
-      int _localFieldCount, ImageView ivCastPoster, TextView tvCastName) {
+      int _localFieldCount, ImageView ivCastPoster, TextView tvCastName, TextView tvCrewJob) {
     super(_bindingComponent, _root, _localFieldCount);
     this.ivCastPoster = ivCastPoster;
     this.tvCastName = tvCastName;
+    this.tvCrewJob = tvCrewJob;
   }
 
   public abstract void setProfileImage(@Nullable String profileImage);

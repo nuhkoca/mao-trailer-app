@@ -29,19 +29,19 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTMUTUAL = 3;
 
-  private static final int LAYOUT_CASTCARD = 4;
+  private static final int LAYOUT_FRAGMENTPROFILE = 4;
 
-  private static final int LAYOUT_DETAILPAGETOP = 5;
+  private static final int LAYOUT_ACTIVITYFAVORITE = 5;
 
-  private static final int LAYOUT_FRAGMENTPROFILE = 6;
+  private static final int LAYOUT_ITEMCARD = 6;
 
-  private static final int LAYOUT_ACTIVITYFAVORITE = 7;
+  private static final int LAYOUT_FAVORITEITEMCARD = 7;
 
-  private static final int LAYOUT_ITEMCARD = 8;
+  private static final int LAYOUT_CASTCARD = 8;
 
-  private static final int LAYOUT_FAVORITEITEMCARD = 9;
+  private static final int LAYOUT_ACTIVITYDETAIL = 9;
 
-  private static final int LAYOUT_ACTIVITYDETAIL = 10;
+  private static final int LAYOUT_DETAILPAGETOP = 10;
 
   private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(10);
 
@@ -49,13 +49,13 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.network_state_item, LAYOUT_NETWORKSTATEITEM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.fragment_mutual, LAYOUT_FRAGMENTMUTUAL);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.cast_card, LAYOUT_CASTCARD);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.detail_page_top, LAYOUT_DETAILPAGETOP);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.fragment_profile, LAYOUT_FRAGMENTPROFILE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.activity_favorite, LAYOUT_ACTIVITYFAVORITE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.item_card, LAYOUT_ITEMCARD);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.favorite_item_card, LAYOUT_FAVORITEITEMCARD);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.cast_card, LAYOUT_CASTCARD);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.activity_detail, LAYOUT_ACTIVITYDETAIL);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.detail_page_top, LAYOUT_DETAILPAGETOP);
   }
 
   @Override
@@ -85,18 +85,6 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for fragment_mutual is invalid. Received: " + tag);
         }
-        case  LAYOUT_CASTCARD: {
-          if ("layout/cast_card_0".equals(tag)) {
-            return new CastCardBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for cast_card is invalid. Received: " + tag);
-        }
-        case  LAYOUT_DETAILPAGETOP: {
-          if ("layout/detail_page_top_0".equals(tag)) {
-            return new DetailPageTopBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for detail_page_top is invalid. Received: " + tag);
-        }
         case  LAYOUT_FRAGMENTPROFILE: {
           if ("layout/fragment_profile_0".equals(tag)) {
             return new FragmentProfileBindingImpl(component, view);
@@ -121,11 +109,23 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for favorite_item_card is invalid. Received: " + tag);
         }
+        case  LAYOUT_CASTCARD: {
+          if ("layout/cast_card_0".equals(tag)) {
+            return new CastCardBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for cast_card is invalid. Received: " + tag);
+        }
         case  LAYOUT_ACTIVITYDETAIL: {
           if ("layout/activity_detail_0".equals(tag)) {
             return new ActivityDetailBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_detail is invalid. Received: " + tag);
+        }
+        case  LAYOUT_DETAILPAGETOP: {
+          if ("layout/detail_page_top_0".equals(tag)) {
+            return new DetailPageTopBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for detail_page_top is invalid. Received: " + tag);
         }
       }
     }
@@ -174,18 +174,6 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         }
         break;
       }
-      case -363980708: {
-        if(tag.equals("layout/cast_card_0")) {
-          return R.layout.cast_card;
-        }
-        break;
-      }
-      case 537559839: {
-        if(tag.equals("layout/detail_page_top_0")) {
-          return R.layout.detail_page_top;
-        }
-        break;
-      }
       case 1940278000: {
         if(tag.equals("layout/fragment_profile_0")) {
           return R.layout.fragment_profile;
@@ -210,9 +198,21 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         }
         break;
       }
+      case -363980708: {
+        if(tag.equals("layout/cast_card_0")) {
+          return R.layout.cast_card;
+        }
+        break;
+      }
       case 257710925: {
         if(tag.equals("layout/activity_detail_0")) {
           return R.layout.activity_detail;
+        }
+        break;
+      }
+      case 537559839: {
+        if(tag.equals("layout/detail_page_top_0")) {
+          return R.layout.detail_page_top;
         }
         break;
       }

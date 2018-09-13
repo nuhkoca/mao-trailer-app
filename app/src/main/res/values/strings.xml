@@ -42,6 +42,8 @@
     <string name="all_item_removing_warning_title">Are you sure you want to delete all items from your favorite list?</string>
     <string name="constraint_exception_text">You have already added %s to your favorite list.</string>
     <string name="database_adding_info_text">You have successfully added %s to your favorite list.</string>
+    <string name="no_genre_info_found">No genre info found.</string>
+    <string name="no_overview_info_found">No overview info found.</string>
 
     <!-- -SharedPreference Key/Values -->
     <string name="movie_category_key">movie-category</string>

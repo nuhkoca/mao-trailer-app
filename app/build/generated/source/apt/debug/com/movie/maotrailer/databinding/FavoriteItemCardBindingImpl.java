@@ -151,7 +151,7 @@ public class FavoriteItemCardBindingImpl extends FavoriteItemCardBinding impleme
             com.movie.maotrailer.binding.ImageBindingAdapter.bindImage(this.ivPoster, favoritePoster, cvMain);
             com.movie.maotrailer.binding.RatingBindingAdapter.bindRating(this.mboundView2, favoriteVote);
             android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView5, favoriteName);
-            com.movie.maotrailer.binding.ReleaseDataBindingAdapter.bindReleaseDate(this.tvDate, favoriteYear);
+            com.movie.maotrailer.binding.ReleaseDateBindingAdapter.bindReleaseDate(this.tvDate, favoriteYear);
         }
     }
     // Listener Stub Implementations

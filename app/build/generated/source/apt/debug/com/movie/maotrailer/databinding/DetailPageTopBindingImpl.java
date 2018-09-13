@@ -189,7 +189,7 @@ public class DetailPageTopBindingImpl extends DetailPageTopBinding  {
         if ((dirtyFlags & 0x31L) != 0) {
             // api target 1
 
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView4, resultOverview);
+            com.movie.maotrailer.binding.OverviewBindingAdapter.bindOverview(this.mboundView4, resultOverview);
         }
         if ((dirtyFlags & 0x29L) != 0) {
             // api target 1

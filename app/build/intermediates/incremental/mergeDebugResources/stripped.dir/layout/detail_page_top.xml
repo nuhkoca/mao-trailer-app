@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+    
+
+                 
+                         
+                                                                   
+           
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/detail_page_top_0">
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:tag="binding_1"           
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/detail_poster_content_description"
+        style="@style/DetailPosterTheme"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="170dp">
+
+        <TextView
+            android:id="@+id/tvGenre"
+            android:tag="binding_2"         
+            style="@style/GenreTextTheme"/>
+
+        <TextView
+            android:id="@+id/tvAverage"
+            android:tag="binding_3"                             
+            app:layout_constraintTop_toBottomOf="@+id/tvGenre"
+            style="@style/AverageTextTheme"/>
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/rbAverage"
+            app:layout_constraintLeft_toRightOf="@+id/tvAverage"
+            app:layout_constraintTop_toBottomOf="@+id/tvGenre"
+            style="@style/CustomRatingBarTheme"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:tag="binding_4"              
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPoster"
+        style="@style/OverviewTheme"/>
+
+</android.support.constraint.ConstraintLayout>
+         

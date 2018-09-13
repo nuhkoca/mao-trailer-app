@@ -18,8 +18,6 @@ public class CastCardBindingImpl extends CastCardBinding  {
     // views
     @NonNull
     private final android.support.constraint.ConstraintLayout mboundView0;
-    @NonNull
-    private final android.widget.TextView mboundView3;
     // variables
     // values
     // listeners
@@ -32,13 +30,13 @@ public class CastCardBindingImpl extends CastCardBinding  {
         super(bindingComponent, root, 0
             , (android.widget.ImageView) bindings[1]
             , (android.widget.TextView) bindings[2]
+            , (android.widget.TextView) bindings[3]
             );
         this.ivCastPoster.setTag(null);
         this.mboundView0 = (android.support.constraint.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
-        this.mboundView3 = (android.widget.TextView) bindings[3];
-        this.mboundView3.setTag(null);
         this.tvCastName.setTag(null);
+        this.tvCrewJob.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();
@@ -135,15 +133,15 @@ public class CastCardBindingImpl extends CastCardBinding  {
 
             com.movie.maotrailer.binding.ImageBindingAdapter.bindImage(this.ivCastPoster, profileImage);
         }
-        if ((dirtyFlags & 0xcL) != 0) {
-            // api target 1
-
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView3, crewJob);
-        }
         if ((dirtyFlags & 0xaL) != 0) {
             // api target 1
 
             android.databinding.adapters.TextViewBindingAdapter.setText(this.tvCastName, castName);
+        }
+        if ((dirtyFlags & 0xcL) != 0) {
+            // api target 1
+
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvCrewJob, crewJob);
         }
     }
     // Listener Stub Implementations

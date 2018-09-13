@@ -285,7 +285,7 @@ public class ItemCardBindingImpl extends ItemCardBinding implements com.movie.ma
         if ((dirtyFlags & 0x131L) != 0) {
             // api target 1
 
-            com.movie.maotrailer.binding.ReleaseDataBindingAdapter.bindReleaseDate(this.tvDate, resultReleaseDateJavaLangObjectNullResultFirstAirDataResultReleaseDate);
+            com.movie.maotrailer.binding.ReleaseDateBindingAdapter.bindReleaseDate(this.tvDate, resultReleaseDateJavaLangObjectNullResultFirstAirDataResultReleaseDate);
         }
     }
     // Listener Stub Implementations

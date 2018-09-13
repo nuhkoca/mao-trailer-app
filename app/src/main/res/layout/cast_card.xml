@@ -39,6 +39,7 @@
         style="@style/CastTextViewTheme"/>
 
     <TextView
+        android:id="@+id/tvCrewJob"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCastName"
         android:text="@{crewJob}"
