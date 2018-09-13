@@ -1,6 +1,6 @@
 # MaoTrailer
 
-<p align="center"><img src="https://github.com/nuhkoca/mao-trailer/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="PickyUp" height="200px"></p>
+<p align="center"><img src="https://github.com/nuhkoca/mao-trailer-app/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="PickyUp" height="200px"></p>
 
 
 **MaoTrailer** is a movies/tv series tracking app that uses [The Movie Database](https://api.themoviedb.org) in the backend. Users can view thousands of collection in the app and add them to their favorite lists.
