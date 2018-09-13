@@ -1,0 +1,1 @@
+["dagger-compiler.jar (com.google.dagger:dagger-compiler:2.16)","compiler.jar (android.arch.lifecycle:compiler:1.1.1)","compiler.jar (android.arch.persistence.room:compiler:1.1.1)","dagger-android-processor.jar (com.google.dagger:dagger-android-processor:2.16)","compiler.jar (com.android.databinding:compiler:3.1.4)","compiler.jar (com.github.bumptech.glide:compiler:4.7.1)"]

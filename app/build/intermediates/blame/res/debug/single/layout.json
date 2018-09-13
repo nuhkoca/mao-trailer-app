@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/network_state_item.xml",
+        "source": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/res/layout/network_state_item.xml"
+    },
+    {
+        "merged": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_mutual.xml",
+        "source": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/res/layout/fragment_mutual.xml"
+    },
+    {
+        "merged": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_card.xml",
+        "source": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/res/layout/item_card.xml"
+    },
+    {
+        "merged": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_detail.xml",
+        "source": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/res/layout/activity_detail.xml"
+    },
+    {
+        "merged": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",
+        "source": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/res/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/favorite_item_card.xml",
+        "source": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/res/layout/favorite_item_card.xml"
+    },
+    {
+        "merged": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/cast_card.xml",
+        "source": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/res/layout/cast_card.xml"
+    },
+    {
+        "merged": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/detail_page_top.xml",
+        "source": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/res/layout/detail_page_top.xml"
+    },
+    {
+        "merged": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_favorite.xml",
+        "source": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/res/layout/activity_favorite.xml"
+    }
+]

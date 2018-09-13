@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="profileImage"
+            type="String" />
+
+        <variable
+            name="castName"
+            type="String" />
+
+        <variable
+            name="crewJob"
+            type="String" />
+    </data>
+<android.support.constraint.ConstraintLayout
+    android:layout_width="@dimen/cast_width"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/ivCastPoster"
+        android:contentDescription="@string/item_list_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@{profileImage}"
+        style="@style/CastImageViewTheme"/>
+
+    <TextView
+        android:id="@+id/tvCastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCastPoster"
+        android:text="@{castName}"
+        style="@style/CastTextViewTheme"/>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCastName"
+        android:text="@{crewJob}"
+        style="@style/CrewJobViewTheme"/>
+
+</android.support.constraint.ConstraintLayout>
+</layout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Genres IDs -->
+    <integer-array name="genreIds">
+        <item name="28">28</item>
+        <item name="12">12</item>
+        <item name="16">16</item>
+        <item name="35">35</item>
+        <item name="80">80</item>
+        <item name="99">99</item>
+        <item name="18">18</item>
+        <item name="10751">10751</item>
+        <item name="14">14</item>
+        <item name="36">36</item>
+        <item name="27">27</item>
+        <item name="10402">10402</item>
+        <item name="9648">9648</item>
+        <item name="10749">10749</item>
+        <item name="878">878</item>
+        <item name="10770">10770</item>
+        <item name="53">53</item>
+        <item name="10752">10752</item>
+        <item name="37">37</item>
+        <item name="10759">10759</item>
+        <item name="10762">10762</item>
+        <item name="10763">10763</item>
+        <item name="10764">10764</item>
+        <item name="10765">10765</item>
+        <item name="10766">10766</item>
+        <item name="10767">10767</item>
+        <item name="10768">10768</item>
+    </integer-array>
+
+    <!-- Genres Labels -->
+    <string-array name="genreLabels">
+        <item name="action">Action</item>
+        <item name="adventure">Adventure</item>
+        <item name="animation">Animation</item>
+        <item name="comedy">Comedy</item>
+        <item name="crime">Crime</item>
+        <item name="documentary">Documentary</item>
+        <item name="drama">Drama</item>
+        <item name="family">Family</item>
+        <item name="fantasy">Fantasy</item>
+        <item name="history">History</item>
+        <item name="horror">Horror</item>
+        <item name="music">Music</item>
+        <item name="mystery">Mystery</item>
+        <item name="romance">Romance</item>
+        <item name="science_fiction">Science Fiction</item>
+        <item name="tv_movie">TV Movie</item>
+        <item name="thriller">Thriller</item>
+        <item name="war">War</item>
+        <item name="western">Western</item>
+        <item name="action_adventure">Action &amp; Adventure</item>
+        <item name="kids">Kids</item>
+        <item name="news">News</item>
+        <item name="reality">Reality</item>
+        <item name="scifi_fantasy">Sci-Fi &amp; Fantasy</item>
+        <item name="soap">Soap</item>
+        <item name="talk">Talk</item>
+        <item name="war_politics">War &amp; Politics</item>
+    </string-array>
+
+</resources>
