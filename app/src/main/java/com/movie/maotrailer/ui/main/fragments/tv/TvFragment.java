@@ -29,6 +29,7 @@ import com.movie.maotrailer.helper.Constants;
 import com.movie.maotrailer.ui.detail.DetailActivity;
 import com.movie.maotrailer.ui.main.fragments.MutualAdapter;
 import com.movie.maotrailer.utils.ColumnUtils;
+import com.movie.maotrailer.utils.ConnectionUtils;
 import com.movie.maotrailer.utils.SharedPreferencesUtil;
 
 import java.util.Objects;
@@ -54,6 +55,9 @@ public class TvFragment extends DaggerFragment implements IRetryListener, IItemC
 
     @Inject
     SharedPreferencesUtil sharedPreferencesUtil;
+
+    @Inject
+    ConnectionUtils connectionUtils;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -125,6 +129,7 @@ public class TvFragment extends DaggerFragment implements IRetryListener, IItemC
     }
 
     private void setupIndicators() {
+        mFragmentMutualBinding.pbMutual.setVisibility(View.VISIBLE);
         mTvViewModel.getInitialLoading().observe(this, networkState -> {
             if (networkState != null) {
                 if (networkState.getStatus() == NetworkState.Status.SUCCESS) {
@@ -187,7 +192,9 @@ public class TvFragment extends DaggerFragment implements IRetryListener, IItemC
 
     @Override
     public void onRefresh() {
-        refreshResults();
+        if (connectionUtils.sniff()) {
+            refreshResults();
+        }
     }
 
     @Override
@@ -206,18 +213,18 @@ public class TvFragment extends DaggerFragment implements IRetryListener, IItemC
     }
 
     @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.tvErrButtonMutual) {
+            refreshResults();
+        }
+    }
+
+    @Override
     public void onDestroy() {
         if (mTvViewModel != null) {
             mTvViewModel.onCleared();
         }
 
         super.onDestroy();
-    }
-
-    @Override
-    public void onClick(View v) {
-        if (v.getId() == R.id.tvErrButtonMutual) {
-            refreshResults();
-        }
     }
 }

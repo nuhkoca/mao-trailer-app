@@ -23,39 +23,39 @@ import java.lang.RuntimeException;
 import java.lang.String;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_ACTIVITYMAIN = 1;
+  private static final int LAYOUT_ACTIVITYFAVORITE = 1;
 
-  private static final int LAYOUT_NETWORKSTATEITEM = 2;
+  private static final int LAYOUT_ACTIVITYMAIN = 2;
 
-  private static final int LAYOUT_FRAGMENTMUTUAL = 3;
+  private static final int LAYOUT_FRAGMENTPROFILE = 3;
 
-  private static final int LAYOUT_FRAGMENTPROFILE = 4;
+  private static final int LAYOUT_NETWORKSTATEITEM = 4;
 
-  private static final int LAYOUT_ACTIVITYFAVORITE = 5;
+  private static final int LAYOUT_ACTIVITYDETAIL = 5;
 
-  private static final int LAYOUT_ITEMCARD = 6;
+  private static final int LAYOUT_FRAGMENTMUTUAL = 6;
 
-  private static final int LAYOUT_FAVORITEITEMCARD = 7;
+  private static final int LAYOUT_CASTCARD = 7;
 
-  private static final int LAYOUT_CASTCARD = 8;
+  private static final int LAYOUT_DETAILPAGETOP = 8;
 
-  private static final int LAYOUT_ACTIVITYDETAIL = 9;
+  private static final int LAYOUT_ITEMCARD = 9;
 
-  private static final int LAYOUT_DETAILPAGETOP = 10;
+  private static final int LAYOUT_FAVORITEITEMCARD = 10;
 
   private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(10);
 
   static {
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.network_state_item, LAYOUT_NETWORKSTATEITEM);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.fragment_mutual, LAYOUT_FRAGMENTMUTUAL);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.fragment_profile, LAYOUT_FRAGMENTPROFILE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.activity_favorite, LAYOUT_ACTIVITYFAVORITE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.fragment_profile, LAYOUT_FRAGMENTPROFILE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.network_state_item, LAYOUT_NETWORKSTATEITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.activity_detail, LAYOUT_ACTIVITYDETAIL);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.fragment_mutual, LAYOUT_FRAGMENTMUTUAL);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.cast_card, LAYOUT_CASTCARD);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.detail_page_top, LAYOUT_DETAILPAGETOP);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.item_card, LAYOUT_ITEMCARD);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.favorite_item_card, LAYOUT_FAVORITEITEMCARD);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.cast_card, LAYOUT_CASTCARD);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.activity_detail, LAYOUT_ACTIVITYDETAIL);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.movie.maotrailer.R.layout.detail_page_top, LAYOUT_DETAILPAGETOP);
   }
 
   @Override
@@ -67,23 +67,17 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
+        case  LAYOUT_ACTIVITYFAVORITE: {
+          if ("layout/activity_favorite_0".equals(tag)) {
+            return new ActivityFavoriteBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_favorite is invalid. Received: " + tag);
+        }
         case  LAYOUT_ACTIVITYMAIN: {
           if ("layout/activity_main_0".equals(tag)) {
             return new ActivityMainBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
-        }
-        case  LAYOUT_NETWORKSTATEITEM: {
-          if ("layout/network_state_item_0".equals(tag)) {
-            return new NetworkStateItemBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for network_state_item is invalid. Received: " + tag);
-        }
-        case  LAYOUT_FRAGMENTMUTUAL: {
-          if ("layout/fragment_mutual_0".equals(tag)) {
-            return new FragmentMutualBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for fragment_mutual is invalid. Received: " + tag);
         }
         case  LAYOUT_FRAGMENTPROFILE: {
           if ("layout/fragment_profile_0".equals(tag)) {
@@ -91,11 +85,35 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for fragment_profile is invalid. Received: " + tag);
         }
-        case  LAYOUT_ACTIVITYFAVORITE: {
-          if ("layout/activity_favorite_0".equals(tag)) {
-            return new ActivityFavoriteBindingImpl(component, view);
+        case  LAYOUT_NETWORKSTATEITEM: {
+          if ("layout/network_state_item_0".equals(tag)) {
+            return new NetworkStateItemBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for activity_favorite is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for network_state_item is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYDETAIL: {
+          if ("layout/activity_detail_0".equals(tag)) {
+            return new ActivityDetailBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_detail is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTMUTUAL: {
+          if ("layout/fragment_mutual_0".equals(tag)) {
+            return new FragmentMutualBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_mutual is invalid. Received: " + tag);
+        }
+        case  LAYOUT_CASTCARD: {
+          if ("layout/cast_card_0".equals(tag)) {
+            return new CastCardBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for cast_card is invalid. Received: " + tag);
+        }
+        case  LAYOUT_DETAILPAGETOP: {
+          if ("layout/detail_page_top_0".equals(tag)) {
+            return new DetailPageTopBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for detail_page_top is invalid. Received: " + tag);
         }
         case  LAYOUT_ITEMCARD: {
           if ("layout/item_card_0".equals(tag)) {
@@ -108,24 +126,6 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new FavoriteItemCardBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for favorite_item_card is invalid. Received: " + tag);
-        }
-        case  LAYOUT_CASTCARD: {
-          if ("layout/cast_card_0".equals(tag)) {
-            return new CastCardBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for cast_card is invalid. Received: " + tag);
-        }
-        case  LAYOUT_ACTIVITYDETAIL: {
-          if ("layout/activity_detail_0".equals(tag)) {
-            return new ActivityDetailBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for activity_detail is invalid. Received: " + tag);
-        }
-        case  LAYOUT_DETAILPAGETOP: {
-          if ("layout/detail_page_top_0".equals(tag)) {
-            return new DetailPageTopBindingImpl(component, view);
-          }
-          throw new IllegalArgumentException("The tag for detail_page_top is invalid. Received: " + tag);
         }
       }
     }
@@ -156,21 +156,15 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     }
     final int code = tag.hashCode();
     switch(code) {
+      case 80293656: {
+        if(tag.equals("layout/activity_favorite_0")) {
+          return R.layout.activity_favorite;
+        }
+        break;
+      }
       case 423753077: {
         if(tag.equals("layout/activity_main_0")) {
           return R.layout.activity_main;
-        }
-        break;
-      }
-      case -909487704: {
-        if(tag.equals("layout/network_state_item_0")) {
-          return R.layout.network_state_item;
-        }
-        break;
-      }
-      case -1653833681: {
-        if(tag.equals("layout/fragment_mutual_0")) {
-          return R.layout.fragment_mutual;
         }
         break;
       }
@@ -180,9 +174,33 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         }
         break;
       }
-      case 80293656: {
-        if(tag.equals("layout/activity_favorite_0")) {
-          return R.layout.activity_favorite;
+      case -909487704: {
+        if(tag.equals("layout/network_state_item_0")) {
+          return R.layout.network_state_item;
+        }
+        break;
+      }
+      case 257710925: {
+        if(tag.equals("layout/activity_detail_0")) {
+          return R.layout.activity_detail;
+        }
+        break;
+      }
+      case -1653833681: {
+        if(tag.equals("layout/fragment_mutual_0")) {
+          return R.layout.fragment_mutual;
+        }
+        break;
+      }
+      case -363980708: {
+        if(tag.equals("layout/cast_card_0")) {
+          return R.layout.cast_card;
+        }
+        break;
+      }
+      case 537559839: {
+        if(tag.equals("layout/detail_page_top_0")) {
+          return R.layout.detail_page_top;
         }
         break;
       }
@@ -195,24 +213,6 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       case 54963471: {
         if(tag.equals("layout/favorite_item_card_0")) {
           return R.layout.favorite_item_card;
-        }
-        break;
-      }
-      case -363980708: {
-        if(tag.equals("layout/cast_card_0")) {
-          return R.layout.cast_card;
-        }
-        break;
-      }
-      case 257710925: {
-        if(tag.equals("layout/activity_detail_0")) {
-          return R.layout.activity_detail;
-        }
-        break;
-      }
-      case 537559839: {
-        if(tag.equals("layout/detail_page_top_0")) {
-          return R.layout.detail_page_top;
         }
         break;
       }
@@ -237,12 +237,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put(com.movie.maotrailer.BR.crewJob, "crewJob");
       sKeys.put(com.movie.maotrailer.BR.title, "title");
       sKeys.put(com.movie.maotrailer.BR.result, "result");
+      sKeys.put(com.movie.maotrailer.BR.firstAirDate, "firstAirDate");
       sKeys.put(com.movie.maotrailer.BR.totalResults, "totalResults");
       sKeys.put(com.movie.maotrailer.BR.credits, "credits");
       sKeys.put(com.movie.maotrailer.BR.genres, "genres");
       sKeys.put(com.movie.maotrailer.BR.crews, "crews");
       sKeys.put(com.movie.maotrailer.BR.id, "id");
-      sKeys.put(com.movie.maotrailer.BR.firstAirData, "firstAirData");
       sKeys.put(com.movie.maotrailer.BR.results, "results");
       sKeys.put(com.movie.maotrailer.BR.videoResults, "videoResults");
       sKeys.put(com.movie.maotrailer.BR.key, "key");

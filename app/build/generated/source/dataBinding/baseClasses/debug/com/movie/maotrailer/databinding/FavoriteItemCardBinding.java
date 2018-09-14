@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.movie.maotrailer.callback.IPopupMenuItemClickListener;
-import com.movie.maotrailer.data.local.FavoriteThings;
+import com.movie.maotrailer.data.local.entity.FavoriteThings;
 
 public abstract class FavoriteItemCardBinding extends ViewDataBinding {
   @NonNull

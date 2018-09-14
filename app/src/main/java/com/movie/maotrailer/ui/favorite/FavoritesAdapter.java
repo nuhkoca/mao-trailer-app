@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import com.android.databinding.library.baseAdapters.BR;
 import com.movie.maotrailer.R;
 import com.movie.maotrailer.callback.IPopupMenuItemClickListener;
-import com.movie.maotrailer.data.local.FavoriteThings;
+import com.movie.maotrailer.data.local.entity.FavoriteThings;
 import com.movie.maotrailer.databinding.FavoriteItemCardBinding;
 
 public class FavoritesAdapter extends PagedListAdapter<FavoriteThings, RecyclerView.ViewHolder> {

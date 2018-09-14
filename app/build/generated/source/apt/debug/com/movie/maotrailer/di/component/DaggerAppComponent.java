@@ -63,6 +63,7 @@ import com.movie.maotrailer.ui.main.fragments.tv.TvViewModel_Factory;
 import com.movie.maotrailer.ui.splash.SplashActivity;
 import com.movie.maotrailer.utils.ColumnUtils;
 import com.movie.maotrailer.utils.ColumnUtils_Factory;
+import com.movie.maotrailer.utils.ConnectionUtils;
 import com.movie.maotrailer.utils.SharedPreferencesUtil;
 import com.movie.maotrailer.viewmodel.MaoViewModelFactory;
 import com.movie.maotrailer.viewmodel.MaoViewModelFactory_Factory;
@@ -624,6 +625,10 @@ public final class DaggerAppComponent implements AppComponent {
       return new SharedPreferencesUtil(DaggerAppComponent.this.getSharedPreferences());
     }
 
+    private ConnectionUtils getConnectionUtils() {
+      return new ConnectionUtils(DaggerAppComponent.this.application);
+    }
+
     @Override
     public void inject(MovieFragment arg0) {
       injectMovieFragment(arg0);
@@ -638,6 +643,7 @@ public final class DaggerAppComponent implements AppComponent {
           instance, DaggerAppComponent.this.columnUtilsProvider.get());
       MovieFragment_MembersInjector.injectSharedPreferencesUtil(
           instance, getSharedPreferencesUtil());
+      MovieFragment_MembersInjector.injectConnectionUtils(instance, getConnectionUtils());
       return instance;
     }
   }
@@ -668,6 +674,10 @@ public final class DaggerAppComponent implements AppComponent {
       return new SharedPreferencesUtil(DaggerAppComponent.this.getSharedPreferences());
     }
 
+    private ConnectionUtils getConnectionUtils() {
+      return new ConnectionUtils(DaggerAppComponent.this.application);
+    }
+
     @Override
     public void inject(TvFragment arg0) {
       injectTvFragment(arg0);
@@ -681,6 +691,7 @@ public final class DaggerAppComponent implements AppComponent {
       TvFragment_MembersInjector.injectColumnUtils(
           instance, DaggerAppComponent.this.columnUtilsProvider.get());
       TvFragment_MembersInjector.injectSharedPreferencesUtil(instance, getSharedPreferencesUtil());
+      TvFragment_MembersInjector.injectConnectionUtils(instance, getConnectionUtils());
       return instance;
     }
   }

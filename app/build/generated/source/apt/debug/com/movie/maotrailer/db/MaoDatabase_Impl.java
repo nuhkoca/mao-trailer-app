@@ -77,7 +77,7 @@ public class MaoDatabase_Impl extends MaoDatabase {
         final TableInfo _infoFavoriteThings = new TableInfo("favorite_things", _columnsFavoriteThings, _foreignKeysFavoriteThings, _indicesFavoriteThings);
         final TableInfo _existingFavoriteThings = TableInfo.read(_db, "favorite_things");
         if (! _infoFavoriteThings.equals(_existingFavoriteThings)) {
-          throw new IllegalStateException("Migration didn't properly handle favorite_things(com.movie.maotrailer.data.local.FavoriteThings).\n"
+          throw new IllegalStateException("Migration didn't properly handle favorite_things(com.movie.maotrailer.data.local.entity.FavoriteThings).\n"
                   + " Expected:\n" + _infoFavoriteThings + "\n"
                   + " Found:\n" + _existingFavoriteThings);
         }

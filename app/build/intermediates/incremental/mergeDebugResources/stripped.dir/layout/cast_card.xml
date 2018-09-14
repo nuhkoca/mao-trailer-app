@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                               
+    
+                                           
+
+                 
+                               
+                            
+
+                 
+                           
+                            
+
+                 
+                          
+                            
+           
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/clCastCrew"
+    android:layout_width="@dimen/cast_width"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:tag="layout/cast_card_0"                                         xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/ivCastPoster"
+        android:contentDescription="@string/item_list_content_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tag="binding_1"      
+        style="@style/CastImageViewTheme"/>
+
+    <TextView
+        android:id="@+id/tvCastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivCastPoster"
+        android:tag="binding_2"   
+        style="@style/CastTextViewTheme"/>
+
+    <TextView
+        android:id="@+id/tvCrewJob"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCastName"
+        android:tag="binding_3"  
+        style="@style/CrewJobViewTheme"/>
+
+</android.support.constraint.ConstraintLayout>
+         

@@ -55,7 +55,7 @@
                 android:id="@+id/tvDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:date="@{result.releaseDate ?? result.firstAirData}"
+                android:date="@{result.releaseDate ?? result.firstAirDate}"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginBottom="25dp"

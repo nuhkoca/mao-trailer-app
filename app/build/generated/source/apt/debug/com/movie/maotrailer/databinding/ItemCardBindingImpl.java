@@ -137,7 +137,7 @@ public class ItemCardBindingImpl extends ItemCardBinding implements com.movie.ma
             }
             return true;
         }
-        else if (fieldId == BR.firstAirData) {
+        else if (fieldId == BR.firstAirDate) {
             synchronized(this) {
                     mDirtyFlags |= 0x20L;
             }
@@ -169,9 +169,9 @@ public class ItemCardBindingImpl extends ItemCardBinding implements com.movie.ma
         float resultVoteAverage = 0f;
         java.lang.String resultTitle = null;
         boolean resultReleaseDateJavaLangObjectNull = false;
-        java.lang.String resultFirstAirData = null;
         java.lang.String resultTitleJavaLangObjectNullResultNameResultTitle = null;
-        java.lang.String resultReleaseDateJavaLangObjectNullResultFirstAirDataResultReleaseDate = null;
+        java.lang.String resultFirstAirDate = null;
+        java.lang.String resultReleaseDateJavaLangObjectNullResultFirstAirDateResultReleaseDate = null;
         com.movie.maotrailer.data.remote.item.Results result = mResult;
         java.lang.String resultName = null;
         java.lang.String resultPosterPath = null;
@@ -239,8 +239,8 @@ public class ItemCardBindingImpl extends ItemCardBinding implements com.movie.ma
         if ((dirtyFlags & 0x1000L) != 0) {
 
                 if (result != null) {
-                    // read result.firstAirData
-                    resultFirstAirData = result.getFirstAirData();
+                    // read result.firstAirDate
+                    resultFirstAirDate = result.getFirstAirDate();
                 }
         }
         if ((dirtyFlags & 0x400L) != 0) {
@@ -258,8 +258,8 @@ public class ItemCardBindingImpl extends ItemCardBinding implements com.movie.ma
         }
         if ((dirtyFlags & 0x131L) != 0) {
 
-                // read result.releaseDate == null ? result.firstAirData : result.releaseDate
-                resultReleaseDateJavaLangObjectNullResultFirstAirDataResultReleaseDate = ((resultReleaseDateJavaLangObjectNull) ? (resultFirstAirData) : (resultReleaseDate));
+                // read result.releaseDate == null ? result.firstAirDate : result.releaseDate
+                resultReleaseDateJavaLangObjectNullResultFirstAirDateResultReleaseDate = ((resultReleaseDateJavaLangObjectNull) ? (resultFirstAirDate) : (resultReleaseDate));
         }
         // batch finished
         if ((dirtyFlags & 0x105L) != 0) {
@@ -285,7 +285,7 @@ public class ItemCardBindingImpl extends ItemCardBinding implements com.movie.ma
         if ((dirtyFlags & 0x131L) != 0) {
             // api target 1
 
-            com.movie.maotrailer.binding.ReleaseDateBindingAdapter.bindReleaseDate(this.tvDate, resultReleaseDateJavaLangObjectNullResultFirstAirDataResultReleaseDate);
+            com.movie.maotrailer.binding.ReleaseDateBindingAdapter.bindReleaseDate(this.tvDate, resultReleaseDateJavaLangObjectNullResultFirstAirDateResultReleaseDate);
         }
     }
     // Listener Stub Implementations
@@ -318,14 +318,14 @@ public class ItemCardBindingImpl extends ItemCardBinding implements com.movie.ma
         flag 2 (0x3L): result.posterPath
         flag 3 (0x4L): result.voteAverage
         flag 4 (0x5L): result.releaseDate
-        flag 5 (0x6L): result.firstAirData
+        flag 5 (0x6L): result.firstAirDate
         flag 6 (0x7L): result.title
         flag 7 (0x8L): result.name
         flag 8 (0x9L): null
         flag 9 (0xaL): result.title == null ? result.name : result.title
         flag 10 (0xbL): result.title == null ? result.name : result.title
-        flag 11 (0xcL): result.releaseDate == null ? result.firstAirData : result.releaseDate
-        flag 12 (0xdL): result.releaseDate == null ? result.firstAirData : result.releaseDate
+        flag 11 (0xcL): result.releaseDate == null ? result.firstAirDate : result.releaseDate
+        flag 12 (0xdL): result.releaseDate == null ? result.firstAirDate : result.releaseDate
     flag mapping end*/
     //end
 }

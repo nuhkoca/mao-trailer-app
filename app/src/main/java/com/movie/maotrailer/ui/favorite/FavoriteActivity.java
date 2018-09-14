@@ -17,7 +17,7 @@ import android.view.View;
 
 import com.movie.maotrailer.R;
 import com.movie.maotrailer.callback.IPopupMenuItemClickListener;
-import com.movie.maotrailer.data.local.FavoriteThings;
+import com.movie.maotrailer.data.local.entity.FavoriteThings;
 import com.movie.maotrailer.databinding.ActivityFavoriteBinding;
 import com.movie.maotrailer.utils.ColumnUtils;
 

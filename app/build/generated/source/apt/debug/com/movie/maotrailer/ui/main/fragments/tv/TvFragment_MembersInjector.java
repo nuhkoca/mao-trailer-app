@@ -4,6 +4,7 @@ package com.movie.maotrailer.ui.main.fragments.tv;
 import android.arch.lifecycle.ViewModelProvider;
 import android.support.v4.app.Fragment;
 import com.movie.maotrailer.utils.ColumnUtils;
+import com.movie.maotrailer.utils.ConnectionUtils;
 import com.movie.maotrailer.utils.SharedPreferencesUtil;
 import dagger.MembersInjector;
 import dagger.android.DispatchingAndroidInjector;
@@ -19,27 +20,33 @@ public final class TvFragment_MembersInjector implements MembersInjector<TvFragm
 
   private final Provider<SharedPreferencesUtil> sharedPreferencesUtilProvider;
 
+  private final Provider<ConnectionUtils> connectionUtilsProvider;
+
   public TvFragment_MembersInjector(
       Provider<DispatchingAndroidInjector<Fragment>> childFragmentInjectorProvider,
       Provider<ViewModelProvider.Factory> viewModelFactoryProvider,
       Provider<ColumnUtils> columnUtilsProvider,
-      Provider<SharedPreferencesUtil> sharedPreferencesUtilProvider) {
+      Provider<SharedPreferencesUtil> sharedPreferencesUtilProvider,
+      Provider<ConnectionUtils> connectionUtilsProvider) {
     this.childFragmentInjectorProvider = childFragmentInjectorProvider;
     this.viewModelFactoryProvider = viewModelFactoryProvider;
     this.columnUtilsProvider = columnUtilsProvider;
     this.sharedPreferencesUtilProvider = sharedPreferencesUtilProvider;
+    this.connectionUtilsProvider = connectionUtilsProvider;
   }
 
   public static MembersInjector<TvFragment> create(
       Provider<DispatchingAndroidInjector<Fragment>> childFragmentInjectorProvider,
       Provider<ViewModelProvider.Factory> viewModelFactoryProvider,
       Provider<ColumnUtils> columnUtilsProvider,
-      Provider<SharedPreferencesUtil> sharedPreferencesUtilProvider) {
+      Provider<SharedPreferencesUtil> sharedPreferencesUtilProvider,
+      Provider<ConnectionUtils> connectionUtilsProvider) {
     return new TvFragment_MembersInjector(
         childFragmentInjectorProvider,
         viewModelFactoryProvider,
         columnUtilsProvider,
-        sharedPreferencesUtilProvider);
+        sharedPreferencesUtilProvider,
+        connectionUtilsProvider);
   }
 
   @Override
@@ -49,6 +56,7 @@ public final class TvFragment_MembersInjector implements MembersInjector<TvFragm
     injectViewModelFactory(instance, viewModelFactoryProvider.get());
     injectColumnUtils(instance, columnUtilsProvider.get());
     injectSharedPreferencesUtil(instance, sharedPreferencesUtilProvider.get());
+    injectConnectionUtils(instance, connectionUtilsProvider.get());
   }
 
   public static void injectViewModelFactory(
@@ -63,5 +71,9 @@ public final class TvFragment_MembersInjector implements MembersInjector<TvFragm
   public static void injectSharedPreferencesUtil(
       TvFragment instance, SharedPreferencesUtil sharedPreferencesUtil) {
     instance.sharedPreferencesUtil = sharedPreferencesUtil;
+  }
+
+  public static void injectConnectionUtils(TvFragment instance, ConnectionUtils connectionUtils) {
+    instance.connectionUtils = connectionUtils;
   }
 }

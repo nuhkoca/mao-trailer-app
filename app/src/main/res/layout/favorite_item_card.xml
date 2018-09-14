@@ -4,7 +4,7 @@
     <data>
         <variable
             name="favorite"
-            type="com.movie.maotrailer.data.local.FavoriteThings" />
+            type="com.movie.maotrailer.data.local.entity.FavoriteThings" />
 
         <variable
             name="popupClickListener"
@@ -54,11 +54,11 @@
             <ImageView
                 android:id="@+id/ivMore"
                 android:layout_width="20dp"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:contentDescription="@string/overflow_content_description"
                 android:onClick="@{()-> popupClickListener.onPopupMenuItemClick(favorite, ivMore)}"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toTopOf="@+id/vBg"
+                app:layout_constraintBottom_toBottomOf="parent"
                 style="@style/ImageOverflowMenuTheme"/>
 
             <TextView

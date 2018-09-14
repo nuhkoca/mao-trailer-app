@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
     <data>
-
         <variable
             name="result"
             type="com.movie.maotrailer.data.remote.item.Results" />
@@ -12,7 +11,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -26,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingEnd="16dp"
+        android:paddingTop="40dp"
         android:paddingStart="170dp">
 
         <TextView
@@ -44,6 +44,12 @@
             app:layout_constraintLeft_toRightOf="@+id/tvAverage"
             app:layout_constraintTop_toBottomOf="@+id/tvGenre"
             style="@style/CustomRatingBarTheme"/>
+
+        <TextView
+            android:text="@{String.valueOf(result.releaseDate ?? result.firstAirDate)}"
+            app:layout_constraintTop_toBottomOf="@+id/rbAverage"
+            android:paddingTop="16dp"
+            style="@style/GenreTextTheme"/>
 
     </android.support.constraint.ConstraintLayout>
 

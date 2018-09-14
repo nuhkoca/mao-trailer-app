@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+                 
+                         
+                                                                   
+           
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/clDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:tag="layout/activity_detail_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:contentScrim="?colorPrimary"
+                    app:expandedTitleMarginBottom="94dp"
+                    app:expandedTitleTextAppearance="@style/CollapsingTextTheme.Inverse"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:expandedTitleGravity="left|bottom"
+                    android:tag="binding_1"                   >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/detail_image_view_content_description"
+                        android:tag="binding_2"             
+                        android:scaleType="centerCrop"
+                        android:fitsSystemWindows="true"
+                        android:tint="#70000000"/>
+
+                    <ImageButton
+                        android:id="@+id/ibPlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="30dp"
+                        android:padding="4dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        app:srcCompat="@drawable/ic_icon_play"
+                        android:contentDescription="@string/play_button_content_description"/>
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbarDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@null"
+                        app:layout_collapseMode="pin" />
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:behavior_overlapTop="78dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:contentPaddingBottom="64dp"
+                    android:layout_marginBottom="16dp"
+                    style="@style/RectangleCardViewTheme" android:tag="binding_3">
+
+                    <include
+                        android:id="@+id/lDetailPageTop"
+                        layout="@layout/detail_page_top" />
+
+                </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tvCastCrewHeader"
+                        style="@style/CastCrewHeaderTextTheme"/>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cvCastCrew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:contentPaddingBottom="16dp"
+                        style="@style/RectangleCardViewTheme">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvCast"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                            android:clipToPadding="true"/>
+
+                        <ProgressBar
+                            android:id="@+id/pbCastCrew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:theme="@style/ProgressBarTheme"
+                            style="?android:attr/progressBarStyle"/>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.design.widget.CoordinatorLayout>
+         

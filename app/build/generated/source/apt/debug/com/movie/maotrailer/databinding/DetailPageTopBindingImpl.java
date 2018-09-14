@@ -14,25 +14,27 @@ public class DetailPageTopBindingImpl extends DetailPageTopBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.rbAverage, 5);
+        sViewsWithIds.put(R.id.rbAverage, 6);
     }
     // views
     @NonNull
     private final android.support.constraint.ConstraintLayout mboundView0;
     @NonNull
     private final android.widget.TextView mboundView4;
+    @NonNull
+    private final android.widget.TextView mboundView5;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public DetailPageTopBindingImpl(@Nullable android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
     }
     private DetailPageTopBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 1
             , (android.widget.ImageView) bindings[1]
-            , (android.support.v7.widget.AppCompatRatingBar) bindings[5]
+            , (android.support.v7.widget.AppCompatRatingBar) bindings[6]
             , (android.widget.TextView) bindings[3]
             , (android.widget.TextView) bindings[2]
             );
@@ -41,6 +43,8 @@ public class DetailPageTopBindingImpl extends DetailPageTopBinding  {
         this.mboundView0.setTag(null);
         this.mboundView4 = (android.widget.TextView) bindings[4];
         this.mboundView4.setTag(null);
+        this.mboundView5 = (android.widget.TextView) bindings[5];
+        this.mboundView5.setTag(null);
         this.tvAverage.setTag(null);
         this.tvGenre.setTag(null);
         setRootTag(root);
@@ -51,7 +55,7 @@ public class DetailPageTopBindingImpl extends DetailPageTopBinding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x20L;
+                mDirtyFlags = 0x80L;
         }
         requestRebind();
     }
@@ -121,9 +125,21 @@ public class DetailPageTopBindingImpl extends DetailPageTopBinding  {
             }
             return true;
         }
-        else if (fieldId == BR.overview) {
+        else if (fieldId == BR.releaseDate) {
             synchronized(this) {
                     mDirtyFlags |= 0x10L;
+            }
+            return true;
+        }
+        else if (fieldId == BR.firstAirDate) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x20L;
+            }
+            return true;
+        }
+        else if (fieldId == BR.overview) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x40L;
             }
             return true;
         }
@@ -141,27 +157,32 @@ public class DetailPageTopBindingImpl extends DetailPageTopBinding  {
         java.lang.String stringValueOfResultVoteAverage = null;
         java.util.List<java.lang.Integer> resultGenres = null;
         float resultVoteAverage = 0f;
+        boolean resultReleaseDateJavaLangObjectNull = false;
+        java.lang.String stringValueOfResultReleaseDateJavaLangObjectNullResultFirstAirDateResultReleaseDate = null;
+        java.lang.String resultFirstAirDate = null;
+        java.lang.String resultReleaseDateJavaLangObjectNullResultFirstAirDateResultReleaseDate = null;
         com.movie.maotrailer.data.remote.item.Results result = mResult;
         java.lang.String resultPosterPath = null;
+        java.lang.String resultReleaseDate = null;
 
-        if ((dirtyFlags & 0x3fL) != 0) {
+        if ((dirtyFlags & 0xffL) != 0) {
 
 
-            if ((dirtyFlags & 0x31L) != 0) {
+            if ((dirtyFlags & 0xc1L) != 0) {
 
                     if (result != null) {
                         // read result.overview
                         resultOverview = result.getOverview();
                     }
             }
-            if ((dirtyFlags & 0x25L) != 0) {
+            if ((dirtyFlags & 0x85L) != 0) {
 
                     if (result != null) {
                         // read result.genres
                         resultGenres = result.getGenres();
                     }
             }
-            if ((dirtyFlags & 0x29L) != 0) {
+            if ((dirtyFlags & 0x89L) != 0) {
 
                     if (result != null) {
                         // read result.voteAverage
@@ -172,31 +193,74 @@ public class DetailPageTopBindingImpl extends DetailPageTopBinding  {
                     // read String.valueOf(result.voteAverage)
                     stringValueOfResultVoteAverage = java.lang.String.valueOf(resultVoteAverage);
             }
-            if ((dirtyFlags & 0x23L) != 0) {
+            if ((dirtyFlags & 0x83L) != 0) {
 
                     if (result != null) {
                         // read result.posterPath
                         resultPosterPath = result.getPosterPath();
                     }
             }
+            if ((dirtyFlags & 0xb1L) != 0) {
+
+                    if (result != null) {
+                        // read result.releaseDate
+                        resultReleaseDate = result.getReleaseDate();
+                    }
+
+
+                    // read result.releaseDate == null
+                    resultReleaseDateJavaLangObjectNull = (resultReleaseDate) == (null);
+                if((dirtyFlags & 0xb1L) != 0) {
+                    if(resultReleaseDateJavaLangObjectNull) {
+                            dirtyFlags |= 0x200L;
+                    }
+                    else {
+                            dirtyFlags |= 0x100L;
+                    }
+                }
+            }
         }
         // batch finished
-        if ((dirtyFlags & 0x23L) != 0) {
+
+        if ((dirtyFlags & 0x200L) != 0) {
+
+                if (result != null) {
+                    // read result.firstAirDate
+                    resultFirstAirDate = result.getFirstAirDate();
+                }
+        }
+
+        if ((dirtyFlags & 0xb1L) != 0) {
+
+                // read result.releaseDate == null ? result.firstAirDate : result.releaseDate
+                resultReleaseDateJavaLangObjectNullResultFirstAirDateResultReleaseDate = ((resultReleaseDateJavaLangObjectNull) ? (resultFirstAirDate) : (resultReleaseDate));
+
+
+                // read String.valueOf(result.releaseDate == null ? result.firstAirDate : result.releaseDate)
+                stringValueOfResultReleaseDateJavaLangObjectNullResultFirstAirDateResultReleaseDate = java.lang.String.valueOf(resultReleaseDateJavaLangObjectNullResultFirstAirDateResultReleaseDate);
+        }
+        // batch finished
+        if ((dirtyFlags & 0x83L) != 0) {
             // api target 1
 
             com.movie.maotrailer.binding.ImageBindingAdapter.bindImage(this.ivPoster, resultPosterPath);
         }
-        if ((dirtyFlags & 0x31L) != 0) {
+        if ((dirtyFlags & 0xb1L) != 0) {
             // api target 1
 
-            com.movie.maotrailer.binding.OverviewBindingAdapter.bindOverview(this.mboundView4, resultOverview);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView4, stringValueOfResultReleaseDateJavaLangObjectNullResultFirstAirDateResultReleaseDate);
         }
-        if ((dirtyFlags & 0x29L) != 0) {
+        if ((dirtyFlags & 0xc1L) != 0) {
+            // api target 1
+
+            com.movie.maotrailer.binding.OverviewBindingAdapter.bindOverview(this.mboundView5, resultOverview);
+        }
+        if ((dirtyFlags & 0x89L) != 0) {
             // api target 1
 
             android.databinding.adapters.TextViewBindingAdapter.setText(this.tvAverage, stringValueOfResultVoteAverage);
         }
-        if ((dirtyFlags & 0x25L) != 0) {
+        if ((dirtyFlags & 0x85L) != 0) {
             // api target 1
 
             com.movie.maotrailer.binding.GenreBindingAdapter.bindGenre(this.tvGenre, resultGenres);
@@ -211,8 +275,12 @@ public class DetailPageTopBindingImpl extends DetailPageTopBinding  {
         flag 1 (0x2L): result.posterPath
         flag 2 (0x3L): result.genres
         flag 3 (0x4L): result.voteAverage
-        flag 4 (0x5L): result.overview
-        flag 5 (0x6L): null
+        flag 4 (0x5L): result.releaseDate
+        flag 5 (0x6L): result.firstAirDate
+        flag 6 (0x7L): result.overview
+        flag 7 (0x8L): null
+        flag 8 (0x9L): result.releaseDate == null ? result.firstAirDate : result.releaseDate
+        flag 9 (0xaL): result.releaseDate == null ? result.firstAirDate : result.releaseDate
     flag mapping end*/
     //end
 }

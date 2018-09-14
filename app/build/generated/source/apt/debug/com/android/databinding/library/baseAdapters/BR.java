@@ -9,7 +9,7 @@ public class BR {
         public static final int crewJob = 5;
         public static final int crews = 6;
         public static final int favorite = 7;
-        public static final int firstAirData = 8;
+        public static final int firstAirDate = 8;
         public static final int genres = 9;
         public static final int id = 10;
         public static final int itemClickListener = 11;

@@ -75,7 +75,7 @@ public class FavoriteItemCardBindingImpl extends FavoriteItemCardBinding impleme
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
         if (BR.favorite == variableId) {
-            setFavorite((com.movie.maotrailer.data.local.FavoriteThings) variable);
+            setFavorite((com.movie.maotrailer.data.local.entity.FavoriteThings) variable);
         }
         else if (BR.popupClickListener == variableId) {
             setPopupClickListener((com.movie.maotrailer.callback.IPopupMenuItemClickListener) variable);
@@ -86,7 +86,7 @@ public class FavoriteItemCardBindingImpl extends FavoriteItemCardBinding impleme
             return variableSet;
     }
 
-    public void setFavorite(@Nullable com.movie.maotrailer.data.local.FavoriteThings Favorite) {
+    public void setFavorite(@Nullable com.movie.maotrailer.data.local.entity.FavoriteThings Favorite) {
         this.mFavorite = Favorite;
         synchronized(this) {
             mDirtyFlags |= 0x1L;
@@ -118,7 +118,7 @@ public class FavoriteItemCardBindingImpl extends FavoriteItemCardBinding impleme
             mDirtyFlags = 0;
         }
         float favoriteVote = 0f;
-        com.movie.maotrailer.data.local.FavoriteThings favorite = mFavorite;
+        com.movie.maotrailer.data.local.entity.FavoriteThings favorite = mFavorite;
         java.lang.String favoriteYear = null;
         java.lang.String favoriteName = null;
         java.lang.String favoritePoster = null;
@@ -161,7 +161,7 @@ public class FavoriteItemCardBindingImpl extends FavoriteItemCardBinding impleme
         // popupClickListener != null
         boolean popupClickListenerJavaLangObjectNull = false;
         // favorite
-        com.movie.maotrailer.data.local.FavoriteThings favorite = mFavorite;
+        com.movie.maotrailer.data.local.entity.FavoriteThings favorite = mFavorite;
         // popupClickListener
         com.movie.maotrailer.callback.IPopupMenuItemClickListener popupClickListener = mPopupClickListener;
 

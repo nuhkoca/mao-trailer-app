@@ -34,10 +34,15 @@ public class CastCrewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if (mCredits != null) {
-            if (position == 0) {
-                ((CastCrewViewHolder) holder).bindTo(mCredits.getCrews().get(position));
+            if (mCredits.getCrews().size() != 0) {
+                if (position == 0) {
+                    ((CastCrewViewHolder) holder).bindTo(mCredits.getCrews().get(position));
+                } else {
+                    ((CastCrewViewHolder) holder).bindTo(mCredits.getCasts().get(position - 1));
+                }
+
             } else {
-                ((CastCrewViewHolder) holder).bindTo(mCredits.getCasts().get(position - 1));
+                ((CastCrewViewHolder) holder).bindTo(mCredits.getCasts().get(position));
             }
         }
     }
@@ -45,7 +50,11 @@ public class CastCrewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public int getItemCount() {
         if (mCredits != null) {
-            return mCredits.getCasts().size() + 1;
+            if (mCredits.getCrews().size() != 0) {
+                return mCredits.getCasts().size() + 1;
+            } else {
+                return mCredits.getCasts().size();
+            }
         } else {
             return 0;
         }
@@ -67,17 +76,26 @@ public class CastCrewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         }
 
         void bindTo(Cast cast) {
-            castCardBinding.setVariable(BR.profileImage, cast.getProfilePath());
-            castCardBinding.setVariable(BR.castName, cast.getName());
-            castCardBinding.tvCrewJob.setVisibility(View.INVISIBLE);
+            if (cast != null) {
+                castCardBinding.setVariable(BR.profileImage, cast.getProfilePath());
+                castCardBinding.setVariable(BR.castName, cast.getName());
+                castCardBinding.tvCrewJob.setVisibility(View.INVISIBLE);
+            } else {
+                castCardBinding.clCastCrew.setVisibility(View.GONE);
+            }
+
             castCardBinding.executePendingBindings();
         }
 
         void bindTo(Crew crew) {
-            castCardBinding.setVariable(BR.profileImage, crew.getProfilePath());
-            castCardBinding.setVariable(BR.castName, crew.getName());
-            castCardBinding.setVariable(BR.crewJob, crew.getJob());
-            castCardBinding.tvCrewJob.setVisibility(View.VISIBLE);
+            if (crew != null) {
+                castCardBinding.setVariable(BR.profileImage, crew.getProfilePath());
+                castCardBinding.setVariable(BR.castName, crew.getName());
+                castCardBinding.setVariable(BR.crewJob, crew.getJob());
+            } else {
+                castCardBinding.clCastCrew.setVisibility(View.GONE);
+            }
+
             castCardBinding.executePendingBindings();
         }
     }

@@ -16,8 +16,6 @@ public class CastCardBindingImpl extends CastCardBinding  {
         sViewsWithIds = null;
     }
     // views
-    @NonNull
-    private final android.support.constraint.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
@@ -28,13 +26,13 @@ public class CastCardBindingImpl extends CastCardBinding  {
     }
     private CastCardBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.support.constraint.ConstraintLayout) bindings[0]
             , (android.widget.ImageView) bindings[1]
             , (android.widget.TextView) bindings[2]
             , (android.widget.TextView) bindings[3]
             );
+        this.clCastCrew.setTag(null);
         this.ivCastPoster.setTag(null);
-        this.mboundView0 = (android.support.constraint.ConstraintLayout) bindings[0];
-        this.mboundView0.setTag(null);
         this.tvCastName.setTag(null);
         this.tvCrewJob.setTag(null);
         setRootTag(root);
@@ -118,25 +116,52 @@ public class CastCardBindingImpl extends CastCardBinding  {
             mDirtyFlags = 0;
         }
         java.lang.String profileImage = mProfileImage;
+        int castNameLength = 0;
         java.lang.String castName = mCastName;
+        boolean castNameLengthInt0 = false;
         java.lang.String crewJob = mCrewJob;
+        int castNameLengthInt0ViewGONEViewVISIBLE = 0;
 
         if ((dirtyFlags & 0x9L) != 0) {
         }
         if ((dirtyFlags & 0xaL) != 0) {
+
+
+
+                if (castName != null) {
+                    // read castName.length
+                    castNameLength = castName.length();
+                }
+
+
+                // read castName.length == 0
+                castNameLengthInt0 = (castNameLength) == (0);
+            if((dirtyFlags & 0xaL) != 0) {
+                if(castNameLengthInt0) {
+                        dirtyFlags |= 0x20L;
+                }
+                else {
+                        dirtyFlags |= 0x10L;
+                }
+            }
+
+
+                // read castName.length == 0 ? View.GONE : View.VISIBLE
+                castNameLengthInt0ViewGONEViewVISIBLE = ((castNameLengthInt0) ? (android.view.View.GONE) : (android.view.View.VISIBLE));
         }
         if ((dirtyFlags & 0xcL) != 0) {
         }
         // batch finished
+        if ((dirtyFlags & 0xaL) != 0) {
+            // api target 1
+
+            this.clCastCrew.setVisibility(castNameLengthInt0ViewGONEViewVISIBLE);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvCastName, castName);
+        }
         if ((dirtyFlags & 0x9L) != 0) {
             // api target 1
 
             com.movie.maotrailer.binding.ImageBindingAdapter.bindImage(this.ivCastPoster, profileImage);
-        }
-        if ((dirtyFlags & 0xaL) != 0) {
-            // api target 1
-
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvCastName, castName);
         }
         if ((dirtyFlags & 0xcL) != 0) {
             // api target 1
@@ -153,6 +178,8 @@ public class CastCardBindingImpl extends CastCardBinding  {
         flag 1 (0x2L): castName
         flag 2 (0x3L): crewJob
         flag 3 (0x4L): null
+        flag 4 (0x5L): castName.length == 0 ? View.GONE : View.VISIBLE
+        flag 5 (0x6L): castName.length == 0 ? View.GONE : View.VISIBLE
     flag mapping end*/
     //end
 }

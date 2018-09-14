@@ -44,7 +44,7 @@ public class Results extends BaseObservable implements Parcelable {
     @SerializedName("release_date")
     private String releaseDate;
     @SerializedName("first_air_date")
-    private String firstAirData;
+    private String firstAirDate;
 
     @SuppressWarnings("unchecked")
     protected Results(Parcel in) {
@@ -57,7 +57,7 @@ public class Results extends BaseObservable implements Parcelable {
         backdropPath = in.readString();
         overview = in.readString();
         releaseDate = in.readString();
-        firstAirData = in.readString();
+        firstAirDate = in.readString();
     }
 
     public static final Creator<Results> CREATOR = new Creator<Results>() {
@@ -162,13 +162,13 @@ public class Results extends BaseObservable implements Parcelable {
     }
 
     @Bindable
-    public String getFirstAirData() {
-        return firstAirData;
+    public String getFirstAirDate() {
+        return firstAirDate;
     }
 
-    public void setFirstAirData(String firstAirData) {
-        this.firstAirData = firstAirData;
-        notifyPropertyChanged(BR.firstAirData);
+    public void setFirstAirDate(String firstAirData) {
+        this.firstAirDate = firstAirData;
+        notifyPropertyChanged(BR.firstAirDate);
     }
 
     @Override
@@ -198,6 +198,6 @@ public class Results extends BaseObservable implements Parcelable {
         dest.writeString(backdropPath);
         dest.writeString(overview);
         dest.writeString(releaseDate);
-        dest.writeString(firstAirData);
+        dest.writeString(firstAirDate);
     }
 }

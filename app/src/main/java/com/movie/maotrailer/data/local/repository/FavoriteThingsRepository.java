@@ -3,7 +3,7 @@ package com.movie.maotrailer.data.local.repository;
 import android.arch.paging.DataSource;
 import android.os.AsyncTask;
 
-import com.movie.maotrailer.data.local.FavoriteThings;
+import com.movie.maotrailer.data.local.entity.FavoriteThings;
 import com.movie.maotrailer.data.local.IRoomProgressListener;
 import com.movie.maotrailer.data.local.dao.FavoriteThingsDao;
 import com.movie.maotrailer.helper.AppsExecutor;

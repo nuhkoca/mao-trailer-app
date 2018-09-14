@@ -9,7 +9,7 @@ import android.arch.persistence.room.RoomSQLiteQuery;
 import android.arch.persistence.room.SharedSQLiteStatement;
 import android.arch.persistence.room.paging.LimitOffsetDataSource;
 import android.database.Cursor;
-import com.movie.maotrailer.data.local.FavoriteThings;
+import com.movie.maotrailer.data.local.entity.FavoriteThings;
 import java.lang.Integer;
 import java.lang.Override;
 import java.lang.String;

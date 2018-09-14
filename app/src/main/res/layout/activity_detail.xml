@@ -98,7 +98,7 @@
                     <android.support.v7.widget.CardView
                         android:id="@+id/cvCastCrew"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         app:contentPaddingBottom="16dp"
                         style="@style/RectangleCardViewTheme">
 

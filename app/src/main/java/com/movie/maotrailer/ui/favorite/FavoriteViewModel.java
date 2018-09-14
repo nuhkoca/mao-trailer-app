@@ -5,7 +5,7 @@ import android.arch.lifecycle.ViewModel;
 import android.arch.paging.LivePagedListBuilder;
 import android.arch.paging.PagedList;
 
-import com.movie.maotrailer.data.local.FavoriteThings;
+import com.movie.maotrailer.data.local.entity.FavoriteThings;
 import com.movie.maotrailer.data.local.repository.FavoriteThingsRepository;
 import com.movie.maotrailer.helper.Constants;
 

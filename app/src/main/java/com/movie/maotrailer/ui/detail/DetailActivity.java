@@ -18,7 +18,7 @@ import android.view.View;
 import com.android.databinding.library.baseAdapters.BR;
 import com.movie.maotrailer.R;
 import com.movie.maotrailer.api.NetworkState;
-import com.movie.maotrailer.data.local.FavoriteThings;
+import com.movie.maotrailer.data.local.entity.FavoriteThings;
 import com.movie.maotrailer.data.local.repository.FavoriteThingsRepository;
 import com.movie.maotrailer.data.remote.addendum.CastCrewResponse;
 import com.movie.maotrailer.data.remote.item.Results;
@@ -99,8 +99,8 @@ public class DetailActivity extends DaggerAppCompatActivity {
                 if (networkState.getStatus() == NetworkState.Status.SUCCESS) {
                     mActivityDetailBinding.pbCastCrew.setVisibility(View.GONE);
                 } else {
-                    mActivityDetailBinding.pbCastCrew.setVisibility(View.GONE);
                     mActivityDetailBinding.cvCastCrew.setVisibility(View.GONE);
+                    mActivityDetailBinding.pbCastCrew.setVisibility(View.GONE);
                     mActivityDetailBinding.tvCastCrewHeader.setText(getString(R.string.no_cast_crew_title));
                 }
             }
@@ -167,7 +167,7 @@ public class DetailActivity extends DaggerAppCompatActivity {
         FavoriteThings favoriteThings = new FavoriteThings(
                 results.getId(),
                 results.getPosterPath(),
-                (!TextUtils.isEmpty(results.getReleaseDate()) ? results.getReleaseDate().substring(0, 4) : results.getFirstAirData().substring(0, 4)),
+                (!TextUtils.isEmpty(results.getReleaseDate()) ? results.getReleaseDate().substring(0, 4) : results.getFirstAirDate().substring(0, 4)),
                 (!TextUtils.isEmpty(results.getName()) ? results.getName() : results.getTitle()),
                 results.getVoteAverage()
         );

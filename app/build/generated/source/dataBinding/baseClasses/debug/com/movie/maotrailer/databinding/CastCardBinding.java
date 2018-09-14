@@ -6,6 +6,7 @@ import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public abstract class CastCardBinding extends ViewDataBinding {
+  @NonNull
+  public final ConstraintLayout clCastCrew;
+
   @NonNull
   public final ImageView ivCastPoster;
 
@@ -32,8 +36,10 @@ public abstract class CastCardBinding extends ViewDataBinding {
   protected String mCrewJob;
 
   protected CastCardBinding(DataBindingComponent _bindingComponent, View _root,
-      int _localFieldCount, ImageView ivCastPoster, TextView tvCastName, TextView tvCrewJob) {
+      int _localFieldCount, ConstraintLayout clCastCrew, ImageView ivCastPoster,
+      TextView tvCastName, TextView tvCrewJob) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.clCastCrew = clCastCrew;
     this.ivCastPoster = ivCastPoster;
     this.tvCastName = tvCastName;
     this.tvCrewJob = tvCrewJob;

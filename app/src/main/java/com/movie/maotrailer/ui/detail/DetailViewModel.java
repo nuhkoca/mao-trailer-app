@@ -5,6 +5,7 @@ import android.arch.lifecycle.ViewModel;
 
 import com.movie.maotrailer.api.NetworkState;
 import com.movie.maotrailer.api.repository.EndpointRepository;
+import com.movie.maotrailer.data.remote.addendum.Cast;
 import com.movie.maotrailer.data.remote.addendum.CastCrewResponse;
 import com.movie.maotrailer.data.remote.addendum.Crew;
 import com.movie.maotrailer.helper.Constants;
@@ -70,19 +71,34 @@ public class DetailViewModel extends ViewModel {
     private void filterFirst(CastCrewResponse castCrewResponse) {
         if (castCrewResponse != null) {
             List<Crew> crewList = new ArrayList<>();
-            Crew crew;
+            List<Cast> castList = new ArrayList<>();
 
-            for (int i = 0; i < castCrewResponse.getCredits().getCrews().size(); i++) {
-                if (castCrewResponse.getCredits().getCrews().get(i).getJob().equals(Constants.DIRECTOR_PREFIX)) {
-                    crew = new Crew();
+            if (castCrewResponse.getCredits().getCrews().size() != 0) {
+                Crew crew;
 
-                    crew.setJob(castCrewResponse.getCredits().getCrews().get(i).getJob());
-                    crew.setName(castCrewResponse.getCredits().getCrews().get(i).getName());
-                    crew.setProfilePath(castCrewResponse.getCredits().getCrews().get(i).getProfilePath());
+                for (int i = 0; i < castCrewResponse.getCredits().getCrews().size(); i++) {
+                    if (castCrewResponse.getCredits().getCrews().get(i).getJob().equals(Constants.DIRECTOR_PREFIX)) {
+                        crew = new Crew();
 
-                    crewList.add(i, crew);
-                    castCrewResponse.getCredits().setCrews(crewList);
+                        crew.setJob(castCrewResponse.getCredits().getCrews().get(i).getJob());
+                        crew.setName(castCrewResponse.getCredits().getCrews().get(i).getName());
+                        crew.setProfilePath(castCrewResponse.getCredits().getCrews().get(i).getProfilePath());
+
+                        crewList.add(i, crew);
+                        castCrewResponse.getCredits().setCrews(crewList);
+                    }else {
+                        crewList.remove(i);
+                        castCrewResponse.getCredits().setCrews(crewList);
+                    }
                 }
+            } else {
+                crewList.add(null);
+                castCrewResponse.getCredits().setCrews(crewList);
+            }
+
+            if (castCrewResponse.getCredits().getCasts().size() == 0) {
+                castList.add(null);
+                castCrewResponse.getCredits().setCasts(castList);
             }
         }
     }

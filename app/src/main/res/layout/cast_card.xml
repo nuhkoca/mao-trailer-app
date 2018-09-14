@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
+        <import type="android.view.View" />
+
         <variable
             name="profileImage"
             type="String" />
@@ -14,13 +17,14 @@
             type="String" />
     </data>
 <android.support.constraint.ConstraintLayout
+    android:id="@+id/clCastCrew"
     android:layout_width="@dimen/cast_width"
     android:layout_height="wrap_content"
     android:background="?attr/selectableItemBackground"
     android:layout_margin="8dp"
     android:clickable="true"
     android:focusable="true"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:visibility="@{castName.length == 0 ? View.GONE : View.VISIBLE}">
 
     <ImageView
         android:id="@+id/ivCastPoster"
