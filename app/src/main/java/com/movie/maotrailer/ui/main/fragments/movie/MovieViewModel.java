@@ -26,7 +26,7 @@ public class MovieViewModel extends ViewModel {
     private AppsExecutor appsExecutor;
 
     @Inject
-    public MovieViewModel(ItemDataSourceFactory itemDataSourceFactory, AppsExecutor appsExecutor) {
+    MovieViewModel(ItemDataSourceFactory itemDataSourceFactory, AppsExecutor appsExecutor) {
         this.itemDataSourceFactory = itemDataSourceFactory;
         this.appsExecutor = appsExecutor;
 

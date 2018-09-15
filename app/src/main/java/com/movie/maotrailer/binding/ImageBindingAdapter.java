@@ -6,7 +6,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.graphics.Palette;
 import android.support.v7.widget.CardView;
 import android.text.TextUtils;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.GlideException;
@@ -52,6 +54,30 @@ public class ImageBindingAdapter {
                     .asBitmap()
                     .load(BuildConfig.ImagePath + url)
                     .disallowHardwareConfig()
+                    .into(dest);
+        }
+    }
+
+    @BindingAdapter(value = {"android:src", "android:pb"})
+    public static void bindImage(ImageView dest, String url, ProgressBar progressBar) {
+        if (!TextUtils.isEmpty(url)) {
+            MaoGlide.with(dest.getContext())
+                    .asBitmap()
+                    .load(BuildConfig.ImagePath + url)
+                    .disallowHardwareConfig()
+                    .listener(new RequestListener<Bitmap>() {
+                        @Override
+                        public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Bitmap> target, boolean isFirstResource) {
+                            progressBar.setVisibility(View.GONE);
+                            return false;
+                        }
+
+                        @Override
+                        public boolean onResourceReady(Bitmap resource, Object model, Target<Bitmap> target, DataSource dataSource, boolean isFirstResource) {
+                            progressBar.setVisibility(View.GONE);
+                            return false;
+                        }
+                    })
                     .into(dest);
         }
     }

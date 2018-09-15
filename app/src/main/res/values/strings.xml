@@ -44,6 +44,8 @@
     <string name="database_adding_info_text">You have successfully added %s to your favorite list.</string>
     <string name="no_genre_info_found">No genre info found.</string>
     <string name="no_overview_info_found">No overview info found.</string>
+    <string name="no_date_info_found">No date info found.</string>
+    <string name="no_active_connection">No active connection</string>
 
     <!-- -SharedPreference Key/Values -->
     <string name="movie_category_key">movie-category</string>

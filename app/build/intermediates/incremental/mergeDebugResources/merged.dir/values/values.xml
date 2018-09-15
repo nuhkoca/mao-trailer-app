@@ -919,7 +919,9 @@
     <string name="movie_db_text">Movie DB</string>
     <string name="movie_title">Movie</string>
     <string name="movie_type_key">movie-type</string>
+    <string name="no_active_connection">No active connection</string>
     <string name="no_cast_crew_title">No Cast &amp; Crew info found.</string>
+    <string name="no_date_info_found">No date info found.</string>
     <string name="no_genre_info_found">No genre info found.</string>
     <string name="no_item_in_db_warning_text">You don\'t have any item in your favorite list. First add some items!</string>
     <string name="no_overview_info_found">No overview info found.</string>
@@ -975,10 +977,13 @@
         <item name="windowActionBar">false</item>
     </style>
     <style name="AppTheme.Launcher" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:colorPrimary">@android:color/white</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:background">@drawable/splash_screen_bg</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
     </style>
     <style name="AverageTextTheme">
         <item name="android:layout_width">wrap_content</item>

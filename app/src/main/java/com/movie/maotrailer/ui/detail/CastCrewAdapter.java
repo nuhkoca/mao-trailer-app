@@ -40,7 +40,6 @@ public class CastCrewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 } else {
                     ((CastCrewViewHolder) holder).bindTo(mCredits.getCasts().get(position - 1));
                 }
-
             } else {
                 ((CastCrewViewHolder) holder).bindTo(mCredits.getCasts().get(position));
             }
@@ -80,11 +79,8 @@ public class CastCrewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 castCardBinding.setVariable(BR.profileImage, cast.getProfilePath());
                 castCardBinding.setVariable(BR.castName, cast.getName());
                 castCardBinding.tvCrewJob.setVisibility(View.INVISIBLE);
-            } else {
-                castCardBinding.clCastCrew.setVisibility(View.GONE);
+                castCardBinding.executePendingBindings();
             }
-
-            castCardBinding.executePendingBindings();
         }
 
         void bindTo(Crew crew) {
@@ -92,11 +88,9 @@ public class CastCrewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 castCardBinding.setVariable(BR.profileImage, crew.getProfilePath());
                 castCardBinding.setVariable(BR.castName, crew.getName());
                 castCardBinding.setVariable(BR.crewJob, crew.getJob());
-            } else {
-                castCardBinding.clCastCrew.setVisibility(View.GONE);
+                castCardBinding.tvCrewJob.setVisibility(View.VISIBLE);
+                castCardBinding.executePendingBindings();
             }
-
-            castCardBinding.executePendingBindings();
         }
     }
 }

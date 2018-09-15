@@ -2,6 +2,7 @@ package com.movie.maotrailer.data.local.repository;
 
 import android.arch.paging.DataSource;
 import android.os.AsyncTask;
+import android.support.annotation.WorkerThread;
 
 import com.movie.maotrailer.data.local.entity.FavoriteThings;
 import com.movie.maotrailer.data.local.IRoomProgressListener;
@@ -22,6 +23,7 @@ public class FavoriteThingsRepository {
 
     }
 
+    @WorkerThread
     public DataSource.Factory<Integer, FavoriteThings> getAll() {
         return favoriteThingsDao.getAll();
     }
@@ -30,10 +32,12 @@ public class FavoriteThingsRepository {
         new insertOrThrowAsync(tid, favoriteThingsDao, iRoomProgressListener).execute(favoriteThings);
     }
 
+    @WorkerThread
     public void deleteItem(final int iid) {
         appsExecutor.diskIO().execute(() -> favoriteThingsDao.deleteItem(iid));
     }
 
+    @WorkerThread
     public void deleteAll() {
         appsExecutor.diskIO().execute(() -> favoriteThingsDao.deleteAll());
     }

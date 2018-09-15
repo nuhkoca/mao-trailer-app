@@ -6,7 +6,10 @@ import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -20,7 +23,13 @@ import com.movie.maotrailer.data.remote.item.Results;
 
 public abstract class ActivityDetailBinding extends ViewDataBinding {
   @NonNull
+  public final AppBarLayout aplDetail;
+
+  @NonNull
   public final CoordinatorLayout clDetail;
+
+  @NonNull
+  public final CollapsingToolbarLayout ctlDetail;
 
   @NonNull
   public final CardView cvCastCrew;
@@ -30,6 +39,9 @@ public abstract class ActivityDetailBinding extends ViewDataBinding {
 
   @NonNull
   public final DetailPageTopBinding lDetailPageTop;
+
+  @NonNull
+  public final NestedScrollView nsvDetail;
 
   @NonNull
   public final ProgressBar pbCastCrew;
@@ -47,15 +59,19 @@ public abstract class ActivityDetailBinding extends ViewDataBinding {
   protected Results mResult;
 
   protected ActivityDetailBinding(DataBindingComponent _bindingComponent, View _root,
-      int _localFieldCount, CoordinatorLayout clDetail, CardView cvCastCrew, ImageButton ibPlay,
-      DetailPageTopBinding lDetailPageTop, ProgressBar pbCastCrew, RecyclerView rvCast,
-      Toolbar toolbarDetail, TextView tvCastCrewHeader) {
+      int _localFieldCount, AppBarLayout aplDetail, CoordinatorLayout clDetail,
+      CollapsingToolbarLayout ctlDetail, CardView cvCastCrew, ImageButton ibPlay,
+      DetailPageTopBinding lDetailPageTop, NestedScrollView nsvDetail, ProgressBar pbCastCrew,
+      RecyclerView rvCast, Toolbar toolbarDetail, TextView tvCastCrewHeader) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.aplDetail = aplDetail;
     this.clDetail = clDetail;
+    this.ctlDetail = ctlDetail;
     this.cvCastCrew = cvCastCrew;
     this.ibPlay = ibPlay;
     this.lDetailPageTop = lDetailPageTop;
     setContainedBinding(this.lDetailPageTop);;
+    this.nsvDetail = nsvDetail;
     this.pbCastCrew = pbCastCrew;
     this.rvCast = rvCast;
     this.toolbarDetail = toolbarDetail;

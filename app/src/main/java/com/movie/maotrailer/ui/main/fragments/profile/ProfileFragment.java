@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 
 import com.movie.maotrailer.R;
 import com.movie.maotrailer.databinding.FragmentProfileBinding;
+import com.movie.maotrailer.helper.AutoClearedValue;
 import com.movie.maotrailer.ui.favorite.FavoriteActivity;
 
 import dagger.android.support.DaggerFragment;
@@ -22,34 +23,33 @@ import dagger.android.support.DaggerFragment;
  */
 public class ProfileFragment extends DaggerFragment implements View.OnClickListener {
 
-    private FragmentProfileBinding mFragmentProfileBinding;
+    private AutoClearedValue<FragmentProfileBinding> mFragmentProfileBindingAutoClearedValue;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        LayoutInflater layoutInflater = LayoutInflater.from(getContext());
-
-        mFragmentProfileBinding = DataBindingUtil.inflate(layoutInflater,
+        FragmentProfileBinding fragmentProfileBinding = DataBindingUtil.inflate(inflater,
                 R.layout.fragment_profile,
                 container,
                 false);
 
-        return mFragmentProfileBinding.getRoot();
+        mFragmentProfileBindingAutoClearedValue = new AutoClearedValue<>(this, fragmentProfileBinding);
+
+        return fragmentProfileBinding.getRoot();
     }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setHasOptionsMenu(false);
+        setHasOptionsMenu(true);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mFragmentProfileBinding.btnFavorites.setOnClickListener(this);
+        mFragmentProfileBindingAutoClearedValue.get().btnFavorites.setOnClickListener(this);
     }
 
     @Override

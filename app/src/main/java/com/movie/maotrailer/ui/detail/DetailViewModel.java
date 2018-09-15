@@ -2,6 +2,7 @@ package com.movie.maotrailer.ui.detail;
 
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
+import android.text.TextUtils;
 
 import com.movie.maotrailer.api.NetworkState;
 import com.movie.maotrailer.api.repository.EndpointRepository;
@@ -30,7 +31,7 @@ public class DetailViewModel extends ViewModel {
     private int mId;
 
     @Inject
-    public DetailViewModel(EndpointRepository endpointRepository, CompositeDisposable compositeDisposable) {
+    DetailViewModel(EndpointRepository endpointRepository, CompositeDisposable compositeDisposable) {
         this.endpointRepository = endpointRepository;
         this.compositeDisposable = compositeDisposable;
 
@@ -46,9 +47,15 @@ public class DetailViewModel extends ViewModel {
     public void fetchCastCrew() {
         Disposable castCrew = endpointRepository.getCastCrewList(mType, mId)
                 .filter(castCrewResponse -> {
-                    filterFirst(castCrewResponse);
+                    filterCrew(castCrewResponse);
                     return true;
                 })
+                .doOnComplete(() -> Timber.d("Crew filtering completed"))
+                .filter(castCrewResponse -> {
+                    filterCast(castCrewResponse);
+                    return true;
+                })
+                .doOnComplete(() -> Timber.d("Cast filtering completed"))
                 .subscribe(this::onSuccess, this::onError);
 
         compositeDisposable.add(castCrew);
@@ -68,12 +75,11 @@ public class DetailViewModel extends ViewModel {
         }
     }
 
-    private void filterFirst(CastCrewResponse castCrewResponse) {
+    private void filterCrew(CastCrewResponse castCrewResponse) {
         if (castCrewResponse != null) {
             List<Crew> crewList = new ArrayList<>();
-            List<Cast> castList = new ArrayList<>();
 
-            if (castCrewResponse.getCredits().getCrews().size() != 0) {
+            if (castCrewResponse.getCredits().getCrews().size() > 0) {
                 Crew crew;
 
                 for (int i = 0; i < castCrewResponse.getCredits().getCrews().size(); i++) {
@@ -85,21 +91,42 @@ public class DetailViewModel extends ViewModel {
                         crew.setProfilePath(castCrewResponse.getCredits().getCrews().get(i).getProfilePath());
 
                         crewList.add(i, crew);
-                        castCrewResponse.getCredits().setCrews(crewList);
-                    }else {
-                        crewList.remove(i);
-                        castCrewResponse.getCredits().setCrews(crewList);
                     }
                 }
             } else {
                 crewList.add(null);
-                castCrewResponse.getCredits().setCrews(crewList);
             }
 
-            if (castCrewResponse.getCredits().getCasts().size() == 0) {
+            castCrewResponse.getCredits().setCrews(crewList);
+        }
+    }
+
+    private void filterCast(CastCrewResponse castCrewResponse) {
+        if (castCrewResponse != null) {
+            List<Cast> castList = new ArrayList<>();
+
+            if (castCrewResponse.getCredits().getCasts().size() > 0) {
+                Cast cast;
+
+                for (int j = 0; j < castCrewResponse.getCredits().getCasts().size(); j++) {
+                    cast = new Cast();
+                    if (!TextUtils.isEmpty(castCrewResponse.getCredits().getCasts().get(j).getProfilePath())) {
+                        cast.setProfilePath(castCrewResponse.getCredits().getCasts().get(j).getProfilePath());
+                        cast.setName(castCrewResponse.getCredits().getCasts().get(j).getName());
+
+                        castList.add(j, cast);
+                    } else {
+                        cast.setProfilePath("null");
+                        cast.setName(castCrewResponse.getCredits().getCasts().get(j).getName());
+
+                        castList.add(j, cast);
+                    }
+                }
+            } else {
                 castList.add(null);
-                castCrewResponse.getCredits().setCasts(castList);
             }
+
+            castCrewResponse.getCredits().setCasts(castList);
         }
     }
 

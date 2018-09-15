@@ -26,7 +26,7 @@ public class TvViewModel extends ViewModel {
     private AppsExecutor appsExecutor;
 
     @Inject
-    public TvViewModel(ItemDataSourceFactory itemDataSourceFactory, AppsExecutor appsExecutor) {
+    TvViewModel(ItemDataSourceFactory itemDataSourceFactory, AppsExecutor appsExecutor) {
         this.itemDataSourceFactory = itemDataSourceFactory;
         this.appsExecutor = appsExecutor;
 

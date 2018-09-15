@@ -57,8 +57,6 @@ dependencies {
     implementation "android.arch.persistence.room:runtime:$versions.arch"
     implementation "android.arch.paging:runtime:$versions.paging"
     implementation "android.arch.lifecycle:extensions:$versions.arch"
-    implementation 'com.android.support:support-v4:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     annotationProcessor "android.arch.persistence.room:compiler:$versions.arch"
     annotationProcessor "android.arch.lifecycle:compiler:$versions.arch"
     testImplementation "android.arch.core:core-testing:$versions.arch"

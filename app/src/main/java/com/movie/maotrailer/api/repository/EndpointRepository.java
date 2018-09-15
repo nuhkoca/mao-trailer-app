@@ -20,7 +20,7 @@ public class EndpointRepository {
     private ITMDBService itmdbService;
 
     @Inject
-    public EndpointRepository(@NonNull ITMDBService itmdbService) {
+    EndpointRepository(@NonNull ITMDBService itmdbService) {
         this.itmdbService = itmdbService;
     }
 

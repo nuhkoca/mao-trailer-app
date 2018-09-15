@@ -15,7 +15,7 @@ public class ColumnUtils {
     private Context context;
 
     @Inject
-    public ColumnUtils(Context context) {
+    ColumnUtils(Context context) {
         this.context = context;
     }
 

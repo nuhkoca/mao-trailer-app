@@ -13,26 +13,32 @@ public class CastCardBindingImpl extends CastCardBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.ivPosterLayout, 4);
+        sViewsWithIds.put(R.id.pbPoster, 5);
     }
     // views
+    @NonNull
+    private final android.support.constraint.ConstraintLayout mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public CastCardBindingImpl(@Nullable android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
     }
     private CastCardBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.support.constraint.ConstraintLayout) bindings[0]
             , (android.widget.ImageView) bindings[1]
+            , (android.widget.FrameLayout) bindings[4]
+            , (android.widget.ProgressBar) bindings[5]
             , (android.widget.TextView) bindings[2]
             , (android.widget.TextView) bindings[3]
             );
-        this.clCastCrew.setTag(null);
         this.ivCastPoster.setTag(null);
+        this.mboundView0 = (android.support.constraint.ConstraintLayout) bindings[0];
+        this.mboundView0.setTag(null);
         this.tvCastName.setTag(null);
         this.tvCrewJob.setTag(null);
         setRootTag(root);
@@ -115,10 +121,10 @@ public class CastCardBindingImpl extends CastCardBinding  {
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
-        java.lang.String profileImage = mProfileImage;
-        int castNameLength = 0;
-        java.lang.String castName = mCastName;
         boolean castNameLengthInt0 = false;
+        java.lang.String profileImage = mProfileImage;
+        java.lang.String castName = mCastName;
+        int castNameLength = 0;
         java.lang.String crewJob = mCrewJob;
         int castNameLengthInt0ViewGONEViewVISIBLE = 0;
 
@@ -129,12 +135,12 @@ public class CastCardBindingImpl extends CastCardBinding  {
 
 
                 if (castName != null) {
-                    // read castName.length
+                    // read castName.length()
                     castNameLength = castName.length();
                 }
 
 
-                // read castName.length == 0
+                // read castName.length() == 0
                 castNameLengthInt0 = (castNameLength) == (0);
             if((dirtyFlags & 0xaL) != 0) {
                 if(castNameLengthInt0) {
@@ -146,22 +152,22 @@ public class CastCardBindingImpl extends CastCardBinding  {
             }
 
 
-                // read castName.length == 0 ? View.GONE : View.VISIBLE
+                // read castName.length() == 0 ? View.GONE : View.VISIBLE
                 castNameLengthInt0ViewGONEViewVISIBLE = ((castNameLengthInt0) ? (android.view.View.GONE) : (android.view.View.VISIBLE));
         }
         if ((dirtyFlags & 0xcL) != 0) {
         }
         // batch finished
-        if ((dirtyFlags & 0xaL) != 0) {
-            // api target 1
-
-            this.clCastCrew.setVisibility(castNameLengthInt0ViewGONEViewVISIBLE);
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvCastName, castName);
-        }
         if ((dirtyFlags & 0x9L) != 0) {
             // api target 1
 
-            com.movie.maotrailer.binding.ImageBindingAdapter.bindImage(this.ivCastPoster, profileImage);
+            com.movie.maotrailer.binding.ImageBindingAdapter.bindImage(this.ivCastPoster, profileImage, pbPoster);
+        }
+        if ((dirtyFlags & 0xaL) != 0) {
+            // api target 1
+
+            this.mboundView0.setVisibility(castNameLengthInt0ViewGONEViewVISIBLE);
+            android.databinding.adapters.TextViewBindingAdapter.setText(this.tvCastName, castName);
         }
         if ((dirtyFlags & 0xcL) != 0) {
             // api target 1
@@ -178,8 +184,8 @@ public class CastCardBindingImpl extends CastCardBinding  {
         flag 1 (0x2L): castName
         flag 2 (0x3L): crewJob
         flag 3 (0x4L): null
-        flag 4 (0x5L): castName.length == 0 ? View.GONE : View.VISIBLE
-        flag 5 (0x6L): castName.length == 0 ? View.GONE : View.VISIBLE
+        flag 4 (0x5L): castName.length() == 0 ? View.GONE : View.VISIBLE
+        flag 5 (0x6L): castName.length() == 0 ? View.GONE : View.VISIBLE
     flag mapping end*/
     //end
 }

@@ -79,7 +79,7 @@ public class DetailActivity extends DaggerAppCompatActivity {
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         mActivityDetailBinding.rvCast.setLayoutManager(linearLayoutManager);
-        mActivityDetailBinding.rvCast.setNestedScrollingEnabled(false);
+        mActivityDetailBinding.rvCast.setNestedScrollingEnabled(true);
 
         mCastCrewAdapter = new CastCrewAdapter();
 

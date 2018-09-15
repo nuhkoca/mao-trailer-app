@@ -17,7 +17,7 @@ public class FavoriteViewModel extends ViewModel {
     private FavoriteThingsRepository favoriteThingsRepository;
 
     @Inject
-    public FavoriteViewModel(FavoriteThingsRepository favoriteThingsRepository) {
+    FavoriteViewModel(FavoriteThingsRepository favoriteThingsRepository) {
         this.favoriteThingsRepository = favoriteThingsRepository;
 
         PagedList.Config config = new PagedList.Config.Builder()

@@ -4,22 +4,16 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.movie.maotrailer.R;
 import com.movie.maotrailer.databinding.ActivityMainBinding;
 import com.movie.maotrailer.helper.Constants;
-import com.movie.maotrailer.ui.main.fragments.movie.MovieFragment;
-import com.movie.maotrailer.ui.main.fragments.profile.ProfileFragment;
-import com.movie.maotrailer.ui.main.fragments.tv.TvFragment;
+import com.movie.maotrailer.helper.ViewPagerInflater;
 
 import dagger.android.support.DaggerAppCompatActivity;
 
@@ -135,54 +129,6 @@ public class MainActivity extends DaggerAppCompatActivity
         }
 
         return false;
-    }
-
-    //caches the fragments in the backstack and survives against screen orientation
-    public class ViewPagerInflater extends FragmentPagerAdapter {
-        private Fragment frags[] = new Fragment[Constants.VIEW_PAGER_OFFSET_LIMIT];
-
-        ViewPagerInflater(FragmentManager fm) {
-            super(fm);
-            frags[0] = new MovieFragment();
-            frags[1] = new TvFragment();
-            frags[2] = new ProfileFragment();
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            switch (position) {
-                case 0:
-                    return getString(R.string.movie_title);
-
-                case 1:
-                    return getString(R.string.tv_title);
-
-                case 2:
-                    return getString(R.string.profile_title);
-
-                default:
-                    break;
-            }
-
-            return null;
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return frags[position];
-        }
-
-        @Override
-        public int getCount() {
-            return frags.length;
-        }
-
-        @NonNull
-        @Override
-        public Object instantiateItem(ViewGroup container, int position) {
-            frags[position] = (Fragment) super.instantiateItem(container, position);
-            return frags[position];
-        }
     }
 
     @Override

@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.movie.maotrailer.R;
 import com.movie.maotrailer.api.ITMDBService;
@@ -25,6 +26,7 @@ import com.movie.maotrailer.callback.IItemClickListener;
 import com.movie.maotrailer.callback.IRetryListener;
 import com.movie.maotrailer.data.remote.item.Results;
 import com.movie.maotrailer.databinding.FragmentMutualBinding;
+import com.movie.maotrailer.helper.AutoClearedValue;
 import com.movie.maotrailer.helper.Constants;
 import com.movie.maotrailer.ui.detail.DetailActivity;
 import com.movie.maotrailer.ui.main.fragments.MutualAdapter;
@@ -41,9 +43,11 @@ import dagger.android.support.DaggerFragment;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MovieFragment extends DaggerFragment implements IRetryListener, IItemClickListener<Results>, View.OnClickListener {
+public class MovieFragment extends DaggerFragment implements IRetryListener,
+        IItemClickListener<Results>,
+        View.OnClickListener {
 
-    private FragmentMutualBinding mFragmentMutualBinding;
+    private AutoClearedValue<FragmentMutualBinding> mFragmentMutualBindingAutoClearedValue;
     private MovieViewModel mMovieViewModel;
     private MutualAdapter mMutualAdapter;
 
@@ -62,40 +66,37 @@ public class MovieFragment extends DaggerFragment implements IRetryListener, IIt
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        LayoutInflater layoutInflater = LayoutInflater.from(getContext());
-
-        mFragmentMutualBinding = DataBindingUtil.inflate(layoutInflater,
+        FragmentMutualBinding fragmentMutualBinding = DataBindingUtil.inflate(inflater,
                 R.layout.fragment_mutual,
                 container,
                 false);
 
-        return mFragmentMutualBinding.getRoot();
+        mFragmentMutualBindingAutoClearedValue = new AutoClearedValue<>(this, fragmentMutualBinding);
+
+        return fragmentMutualBinding.getRoot();
     }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setHasOptionsMenu(true);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
         mMovieViewModel = ViewModelProviders.of(this, viewModelFactory).get(MovieViewModel.class);
 
         int spanCount = columnUtils.getOptimalNumberOfColumn(getActivity());
         GridLayoutManager layoutManager = new GridLayoutManager(getContext(), spanCount);
-        mFragmentMutualBinding.rvMutual.setLayoutManager(layoutManager);
+        mFragmentMutualBindingAutoClearedValue.get().rvMutual.setLayoutManager(layoutManager);
 
         mMutualAdapter = new MutualAdapter(this, this);
 
         mMovieViewModel.setPreconditions(ITMDBService.Type.MOVIE, ITMDBService.Category.NOW_PLAYING.getValue());
         fetchResults();
 
-        mFragmentMutualBinding.tvErrButtonMutual.setOnClickListener(this);
+        mFragmentMutualBindingAutoClearedValue.get().tvErrButtonMutual.setOnClickListener(this);
     }
 
     @Override
@@ -129,27 +130,27 @@ public class MovieFragment extends DaggerFragment implements IRetryListener, IIt
     }
 
     private void setupIndicators() {
-        mFragmentMutualBinding.pbMutual.setVisibility(View.VISIBLE);
+        mFragmentMutualBindingAutoClearedValue.get().pbMutual.setVisibility(View.VISIBLE);
         mMovieViewModel.getInitialLoading().observe(this, networkState -> {
             if (networkState != null) {
                 if (networkState.getStatus() == NetworkState.Status.SUCCESS) {
-                    mFragmentMutualBinding.pbMutual.setVisibility(View.GONE);
-                    mFragmentMutualBinding.tvErrTextMutual.setVisibility(View.GONE);
-                    mFragmentMutualBinding.tvErrButtonMutual.setVisibility(View.GONE);
+                    mFragmentMutualBindingAutoClearedValue.get().pbMutual.setVisibility(View.GONE);
+                    mFragmentMutualBindingAutoClearedValue.get().tvErrTextMutual.setVisibility(View.GONE);
+                    mFragmentMutualBindingAutoClearedValue.get().tvErrButtonMutual.setVisibility(View.GONE);
                 } else if (networkState.getStatus() == NetworkState.Status.FAILED) {
-                    mFragmentMutualBinding.pbMutual.setVisibility(View.GONE);
-                    mFragmentMutualBinding.tvErrTextMutual.setVisibility(View.VISIBLE);
-                    mFragmentMutualBinding.tvErrButtonMutual.setVisibility(View.VISIBLE);
-                    mFragmentMutualBinding.tvErrTextMutual.setText(getString(R.string.response_error_text));
+                    mFragmentMutualBindingAutoClearedValue.get().pbMutual.setVisibility(View.GONE);
+                    mFragmentMutualBindingAutoClearedValue.get().tvErrTextMutual.setVisibility(View.VISIBLE);
+                    mFragmentMutualBindingAutoClearedValue.get().tvErrButtonMutual.setVisibility(View.VISIBLE);
+                    mFragmentMutualBindingAutoClearedValue.get().tvErrTextMutual.setText(getString(R.string.response_error_text));
                 } else if (networkState.getStatus() == NetworkState.Status.NO_ITEM) {
-                    mFragmentMutualBinding.pbMutual.setVisibility(View.GONE);
-                    mFragmentMutualBinding.tvErrTextMutual.setVisibility(View.VISIBLE);
-                    mFragmentMutualBinding.tvErrTextMutual.setText(getString(R.string.no_result_error_text));
-                    mFragmentMutualBinding.tvErrButtonMutual.setVisibility(View.GONE);
+                    mFragmentMutualBindingAutoClearedValue.get().pbMutual.setVisibility(View.GONE);
+                    mFragmentMutualBindingAutoClearedValue.get().tvErrTextMutual.setVisibility(View.VISIBLE);
+                    mFragmentMutualBindingAutoClearedValue.get().tvErrTextMutual.setText(getString(R.string.no_result_error_text));
+                    mFragmentMutualBindingAutoClearedValue.get().tvErrButtonMutual.setVisibility(View.GONE);
                 } else {
-                    mFragmentMutualBinding.pbMutual.setVisibility(View.VISIBLE);
-                    mFragmentMutualBinding.tvErrTextMutual.setVisibility(View.GONE);
-                    mFragmentMutualBinding.tvErrButtonMutual.setVisibility(View.GONE);
+                    mFragmentMutualBindingAutoClearedValue.get().pbMutual.setVisibility(View.VISIBLE);
+                    mFragmentMutualBindingAutoClearedValue.get().tvErrTextMutual.setVisibility(View.GONE);
+                    mFragmentMutualBindingAutoClearedValue.get().tvErrButtonMutual.setVisibility(View.GONE);
                 }
             }
         });
@@ -171,7 +172,7 @@ public class MovieFragment extends DaggerFragment implements IRetryListener, IIt
             }
         });
 
-        mFragmentMutualBinding.rvMutual.setAdapter(mMutualAdapter);
+        mFragmentMutualBindingAutoClearedValue.get().rvMutual.setAdapter(mMutualAdapter);
     }
 
     public void refreshResults() {
@@ -186,13 +187,15 @@ public class MovieFragment extends DaggerFragment implements IRetryListener, IIt
                 mMutualAdapter.submitList(results);
             }
         });
-        mFragmentMutualBinding.rvMutual.setAdapter(mMutualAdapter);
+        mFragmentMutualBindingAutoClearedValue.get().rvMutual.setAdapter(mMutualAdapter);
     }
 
     @Override
     public void onRefresh() {
         if (connectionUtils.sniff()) {
             refreshResults();
+        } else {
+            Toast.makeText(getContext(), getString(R.string.no_active_connection), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -217,6 +220,14 @@ public class MovieFragment extends DaggerFragment implements IRetryListener, IIt
         if (v.getId() == R.id.tvErrButtonMutual) {
             refreshResults();
         }
+    }
+
+    @Override
+    public void onDetach() {
+        if (mMovieViewModel != null) {
+            mMovieViewModel.onCleared();
+        }
+        super.onDetach();
     }
 
     @Override

@@ -2,8 +2,9 @@ package com.movie.maotrailer.di;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.annotation.NonNull;
-import android.support.v4.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.GlideBuilder;
@@ -18,7 +19,6 @@ import com.bumptech.glide.module.AppGlideModule;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
 import com.bumptech.glide.signature.ObjectKey;
-import com.movie.maotrailer.R;
 
 import java.io.InputStream;
 import java.util.concurrent.TimeUnit;
@@ -59,6 +59,8 @@ public class MaoTrailerGlideModule extends AppGlideModule {
                 .override(Target.SIZE_ORIGINAL)
                 //.placeholder(ContextCompat.getDrawable(context, R.drawable.ic_placeholder))
                 //.error(ContextCompat.getDrawable(context, R.drawable.ic_placeholder))
+                .error(new ColorDrawable(Color.GRAY))
+                .fallback(new ColorDrawable(Color.GRAY))
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .format(PREFER_ARGB_8888) //since O+ devices throw error when using Palette
                 .fitCenter()

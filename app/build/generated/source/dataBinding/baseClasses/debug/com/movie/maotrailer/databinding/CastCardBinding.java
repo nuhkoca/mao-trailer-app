@@ -6,19 +6,23 @@ import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.constraint.ConstraintLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public abstract class CastCardBinding extends ViewDataBinding {
   @NonNull
-  public final ConstraintLayout clCastCrew;
+  public final ImageView ivCastPoster;
 
   @NonNull
-  public final ImageView ivCastPoster;
+  public final FrameLayout ivPosterLayout;
+
+  @NonNull
+  public final ProgressBar pbPoster;
 
   @NonNull
   public final TextView tvCastName;
@@ -36,11 +40,12 @@ public abstract class CastCardBinding extends ViewDataBinding {
   protected String mCrewJob;
 
   protected CastCardBinding(DataBindingComponent _bindingComponent, View _root,
-      int _localFieldCount, ConstraintLayout clCastCrew, ImageView ivCastPoster,
-      TextView tvCastName, TextView tvCrewJob) {
+      int _localFieldCount, ImageView ivCastPoster, FrameLayout ivPosterLayout,
+      ProgressBar pbPoster, TextView tvCastName, TextView tvCrewJob) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.clCastCrew = clCastCrew;
     this.ivCastPoster = ivCastPoster;
+    this.ivPosterLayout = ivPosterLayout;
+    this.pbPoster = pbPoster;
     this.tvCastName = tvCastName;
     this.tvCrewJob = tvCrewJob;
   }

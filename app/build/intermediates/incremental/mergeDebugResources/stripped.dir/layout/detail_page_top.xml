@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-        
+
+                                                               
     
                  
                          
@@ -7,19 +8,18 @@
            
 
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white"
-    xmlns:app="http://schemas.android.com/apk/res-auto"  android:tag="layout/detail_page_top_0">
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"  android:tag="layout/detail_page_top_0" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ImageView
         android:id="@+id/ivPoster"
         android:tag="binding_1"           
+        android:contentDescription="@string/detail_poster_content_description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/detail_poster_content_description"
-        style="@style/DetailPosterTheme"/>
+        style="@style/DetailPosterTheme" />
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="wrap_content"
@@ -59,5 +59,6 @@
         app:layout_constraintTop_toBottomOf="@+id/ivPoster"
         style="@style/OverviewTheme"/>
 
-</android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout
+>
          

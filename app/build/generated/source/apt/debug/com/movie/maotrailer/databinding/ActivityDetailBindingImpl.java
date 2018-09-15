@@ -12,22 +12,22 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     @Nullable
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
-        sIncludes = new android.databinding.ViewDataBinding.IncludedLayouts(11);
+        sIncludes = new android.databinding.ViewDataBinding.IncludedLayouts(13);
         sIncludes.setIncludes(3, 
             new String[] {"detail_page_top"},
             new int[] {4},
             new int[] {R.layout.detail_page_top});
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.ibPlay, 5);
-        sViewsWithIds.put(R.id.toolbarDetail, 6);
-        sViewsWithIds.put(R.id.tvCastCrewHeader, 7);
-        sViewsWithIds.put(R.id.cvCastCrew, 8);
-        sViewsWithIds.put(R.id.rvCast, 9);
-        sViewsWithIds.put(R.id.pbCastCrew, 10);
+        sViewsWithIds.put(R.id.aplDetail, 5);
+        sViewsWithIds.put(R.id.ibPlay, 6);
+        sViewsWithIds.put(R.id.toolbarDetail, 7);
+        sViewsWithIds.put(R.id.nsvDetail, 8);
+        sViewsWithIds.put(R.id.tvCastCrewHeader, 9);
+        sViewsWithIds.put(R.id.cvCastCrew, 10);
+        sViewsWithIds.put(R.id.rvCast, 11);
+        sViewsWithIds.put(R.id.pbCastCrew, 12);
     }
     // views
-    @NonNull
-    private final android.support.design.widget.CollapsingToolbarLayout mboundView1;
     @NonNull
     private final android.widget.ImageView mboundView2;
     @NonNull
@@ -38,22 +38,24 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityDetailBindingImpl(@Nullable android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 11, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 13, sIncludes, sViewsWithIds));
     }
     private ActivityDetailBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 2
+            , (android.support.design.widget.AppBarLayout) bindings[5]
             , (android.support.design.widget.CoordinatorLayout) bindings[0]
-            , (android.support.v7.widget.CardView) bindings[8]
-            , (android.widget.ImageButton) bindings[5]
+            , (android.support.design.widget.CollapsingToolbarLayout) bindings[1]
+            , (android.support.v7.widget.CardView) bindings[10]
+            , (android.widget.ImageButton) bindings[6]
             , (com.movie.maotrailer.databinding.DetailPageTopBinding) bindings[4]
-            , (android.widget.ProgressBar) bindings[10]
-            , (android.support.v7.widget.RecyclerView) bindings[9]
-            , (android.support.v7.widget.Toolbar) bindings[6]
-            , (android.widget.TextView) bindings[7]
+            , (android.support.v4.widget.NestedScrollView) bindings[8]
+            , (android.widget.ProgressBar) bindings[12]
+            , (android.support.v7.widget.RecyclerView) bindings[11]
+            , (android.support.v7.widget.Toolbar) bindings[7]
+            , (android.widget.TextView) bindings[9]
             );
         this.clDetail.setTag(null);
-        this.mboundView1 = (android.support.design.widget.CollapsingToolbarLayout) bindings[1];
-        this.mboundView1.setTag(null);
+        this.ctlDetail.setTag(null);
         this.mboundView2 = (android.widget.ImageView) bindings[2];
         this.mboundView2.setTag(null);
         this.mboundView3 = (android.support.v7.widget.CardView) bindings[3];
@@ -223,7 +225,7 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
         if ((dirtyFlags & 0x2eL) != 0) {
             // api target 1
 
-            this.mboundView1.setTitle(resultTitleJavaLangObjectNullResultNameResultTitle);
+            this.ctlDetail.setTitle(resultTitleJavaLangObjectNullResultNameResultTitle);
         }
         if ((dirtyFlags & 0x32L) != 0) {
             // api target 1
