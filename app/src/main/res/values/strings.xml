@@ -45,6 +45,8 @@
     <string name="no_genre_info_found">No genre info found.</string>
     <string name="no_overview_info_found">No overview info found.</string>
     <string name="no_date_info_found">No date info found.</string>
+    <string name="no_video_found">No video found.</string>
+    <string name="no_youtube_app">Youtube app couldn\'t be found.</string>
     <string name="no_active_connection">No active connection</string>
 
     <!-- -SharedPreference Key/Values -->

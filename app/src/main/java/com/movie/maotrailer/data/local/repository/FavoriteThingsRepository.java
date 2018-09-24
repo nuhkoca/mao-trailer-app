@@ -1,12 +1,13 @@
 package com.movie.maotrailer.data.local.repository;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.paging.DataSource;
 import android.os.AsyncTask;
 import android.support.annotation.WorkerThread;
 
-import com.movie.maotrailer.data.local.entity.FavoriteThings;
 import com.movie.maotrailer.data.local.IRoomProgressListener;
 import com.movie.maotrailer.data.local.dao.FavoriteThingsDao;
+import com.movie.maotrailer.data.local.entity.FavoriteThings;
 import com.movie.maotrailer.helper.AppsExecutor;
 
 import javax.inject.Inject;
@@ -20,12 +21,15 @@ public class FavoriteThingsRepository {
     public FavoriteThingsRepository(FavoriteThingsDao favoriteThingsDao, AppsExecutor appsExecutor) {
         this.favoriteThingsDao = favoriteThingsDao;
         this.appsExecutor = appsExecutor;
-
     }
 
     @WorkerThread
     public DataSource.Factory<Integer, FavoriteThings> getAll() {
         return favoriteThingsDao.getAll();
+    }
+
+    public LiveData<Integer> getCount() {
+        return favoriteThingsDao.getCount();
     }
 
     public void insertOrThrow(FavoriteThings favoriteThings, int tid, IRoomProgressListener iRoomProgressListener) {

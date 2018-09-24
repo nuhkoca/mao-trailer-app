@@ -4,7 +4,7 @@
             "outputFile": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/73953c056ca2df0467ecc05982516e10/res/values-night-v8/values-night-v8.xml",
+                    "source": "/Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0651f16d85dfe37627515941ab2f6b23/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

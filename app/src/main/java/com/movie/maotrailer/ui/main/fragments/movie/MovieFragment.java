@@ -212,7 +212,6 @@ public class MovieFragment extends DaggerFragment implements IRetryListener,
                         ViewCompat.getTransitionName(imageView));
 
         startActivity(detailIntent, option.toBundle());
-
     }
 
     @Override
@@ -220,6 +219,12 @@ public class MovieFragment extends DaggerFragment implements IRetryListener,
         if (v.getId() == R.id.tvErrButtonMutual) {
             refreshResults();
         }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Objects.requireNonNull(getActivity()).supportStartPostponedEnterTransition();
     }
 
     @Override

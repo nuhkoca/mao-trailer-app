@@ -2,7 +2,6 @@ package com.movie.maotrailer.ui.favorite;
 
 import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
-import android.arch.paging.PagedList;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -30,8 +29,6 @@ public class FavoriteActivity extends DaggerAppCompatActivity implements IPopupM
     private ActivityFavoriteBinding mActivityFavoriteBinding;
     private FavoriteViewModel mFavoriteViewModel;
     private FavoritesAdapter mFavoritesAdapter;
-
-    private PagedList<FavoriteThings> mFavoriteThingsList;
 
     @Inject
     ViewModelProvider.Factory viewModelFactory;
@@ -63,8 +60,6 @@ public class FavoriteActivity extends DaggerAppCompatActivity implements IPopupM
                 mFavoritesAdapter.submitList(favoriteThings);
                 mActivityFavoriteBinding.pbFavorite.setVisibility(View.GONE);
                 mActivityFavoriteBinding.tvErrTextFavorite.setVisibility(View.GONE);
-
-                mFavoriteThingsList = favoriteThings;
             } else {
                 mActivityFavoriteBinding.pbFavorite.setVisibility(View.GONE);
                 mActivityFavoriteBinding.tvErrTextFavorite.setText(getString(R.string.no_item_in_db_warning_text));
@@ -155,32 +150,36 @@ public class FavoriteActivity extends DaggerAppCompatActivity implements IPopupM
     }
 
     private void deleteAll() {
-        if (mFavoriteThingsList != null && mFavoriteThingsList.size() > 0) {
-            AlertDialog dialog = new AlertDialog.Builder(this)
-                    .setTitle(getString(R.string.all_item_removing_warning_title))
-                    .setMessage(getString(R.string.item_removing_warning_text))
-                    .setPositiveButton(getString(R.string.ok_action_text), (dialog1, which) -> {
+        mFavoriteViewModel.getDataCount().observe(this, dataCount -> {
+            if (dataCount != null) {
+                if (dataCount > 0) {
+                    AlertDialog dialog = new AlertDialog.Builder(this)
+                            .setTitle(getString(R.string.all_item_removing_warning_title))
+                            .setMessage(getString(R.string.item_removing_warning_text))
+                            .setPositiveButton(getString(R.string.ok_action_text), (dialog1, which) -> {
 
-                        mFavoriteViewModel.deleteAll();
-                        getAll();
-                        dialog1.dismiss();
+                                mFavoriteViewModel.deleteAll();
+                                getAll();
+                                dialog1.dismiss();
 
-                        Snackbar snackbar = Snackbar.make(mActivityFavoriteBinding.clFavorite,
-                                getString(R.string.all_item_deleted_info_text), Snackbar.LENGTH_SHORT);
+                                Snackbar snackbar = Snackbar.make(mActivityFavoriteBinding.clFavorite,
+                                        getString(R.string.all_item_deleted_info_text), Snackbar.LENGTH_SHORT);
 
-                        snackbar.setAction(getString(R.string.dismiss_action_text), null);
+                                snackbar.setAction(getString(R.string.dismiss_action_text), null);
 
-                        snackbar.show();
+                                snackbar.show();
 
-                    })
-                    .setNegativeButton(getString(R.string.cancel_action_text), (dialog12, which) -> {
-                        dialog12.dismiss();
-                    })
-                    .setCancelable(false)
-                    .create();
+                            })
+                            .setNegativeButton(getString(R.string.cancel_action_text), (dialog12, which) -> {
+                                dialog12.dismiss();
+                            })
+                            .setCancelable(false)
+                            .create();
 
-            dialog.show();
-        }
+                    dialog.show();
+                }
+            }
+        });
     }
 
     private void getAll() {
@@ -188,7 +187,6 @@ public class FavoriteActivity extends DaggerAppCompatActivity implements IPopupM
             if (favoriteThings != null) {
                 mFavoritesAdapter.submitList(null);
                 mFavoritesAdapter.submitList(favoriteThings);
-                this.mFavoriteThingsList = favoriteThings;
             }
         });
     }

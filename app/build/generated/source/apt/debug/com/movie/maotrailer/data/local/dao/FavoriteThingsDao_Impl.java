@@ -1,14 +1,18 @@
 package com.movie.maotrailer.data.local.dao;
 
+import android.arch.lifecycle.ComputableLiveData;
+import android.arch.lifecycle.LiveData;
 import android.arch.paging.DataSource;
 import android.arch.paging.DataSource.Factory;
 import android.arch.persistence.db.SupportSQLiteStatement;
 import android.arch.persistence.room.EntityInsertionAdapter;
+import android.arch.persistence.room.InvalidationTracker.Observer;
 import android.arch.persistence.room.RoomDatabase;
 import android.arch.persistence.room.RoomSQLiteQuery;
 import android.arch.persistence.room.SharedSQLiteStatement;
 import android.arch.persistence.room.paging.LimitOffsetDataSource;
 import android.database.Cursor;
+import android.support.annotation.NonNull;
 import com.movie.maotrailer.data.local.entity.FavoriteThings;
 import java.lang.Integer;
 import java.lang.Override;
@@ -16,6 +20,7 @@ import java.lang.String;
 import java.lang.SuppressWarnings;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @SuppressWarnings("unchecked")
 public class FavoriteThingsDao_Impl implements FavoriteThingsDao {
@@ -173,5 +178,50 @@ public class FavoriteThingsDao_Impl implements FavoriteThingsDao {
       _cursor.close();
       _statement.release();
     }
+  }
+
+  @Override
+  public LiveData<Integer> getCount() {
+    final String _sql = "SELECT count(*) FROM favorite_things";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    return new ComputableLiveData<Integer>() {
+      private Observer _observer;
+
+      @Override
+      protected Integer compute() {
+        if (_observer == null) {
+          _observer = new Observer("favorite_things") {
+            @Override
+            public void onInvalidated(@NonNull Set<String> tables) {
+              invalidate();
+            }
+          };
+          __db.getInvalidationTracker().addWeakObserver(_observer);
+        }
+        final Cursor _cursor = __db.query(_statement);
+        try {
+          final Integer _result;
+          if(_cursor.moveToFirst()) {
+            final Integer _tmp;
+            if (_cursor.isNull(0)) {
+              _tmp = null;
+            } else {
+              _tmp = _cursor.getInt(0);
+            }
+            _result = _tmp;
+          } else {
+            _result = null;
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    }.getLiveData();
   }
 }

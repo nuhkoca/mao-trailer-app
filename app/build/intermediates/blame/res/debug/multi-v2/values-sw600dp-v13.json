@@ -4,7 +4,17 @@
             "outputFile": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/86f44cd6e170b462c7fd9b3e55d10a62/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0651f16d85dfe37627515941ab2f6b23/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    }
+                },
+                {
+                    "source": "/Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/87955198c62f69927937fd9ac5571d2e/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -20,16 +30,6 @@
                         "endLines": "10,11,12,13,14,15,16,17,18,22",
                         "endColumns": "59,69,70,71,57,57,105,63,62,12",
                         "endOffsets": "666,736,807,879,937,995,1101,1165,1228,1410"
-                    }
-                },
-                {
-                    "source": "/Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/73953c056ca2df0467ecc05982516e10/res/values-sw600dp-v13/values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,193,263,337,413,472,543",
-                        "endColumns": "68,68,69,73,75,58,70,67",
-                        "endOffsets": "119,188,258,332,408,467,538,606"
                     }
                 }
             ]

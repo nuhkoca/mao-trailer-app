@@ -4,9 +4,7 @@ import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.LinearLayoutManager;
@@ -18,15 +16,12 @@ import android.view.View;
 import com.android.databinding.library.baseAdapters.BR;
 import com.movie.maotrailer.R;
 import com.movie.maotrailer.api.NetworkState;
-import com.movie.maotrailer.data.local.entity.FavoriteThings;
 import com.movie.maotrailer.data.local.repository.FavoriteThingsRepository;
 import com.movie.maotrailer.data.remote.addendum.CastCrewResponse;
 import com.movie.maotrailer.data.remote.item.Results;
 import com.movie.maotrailer.databinding.ActivityDetailBinding;
 import com.movie.maotrailer.helper.Constants;
 import com.movie.maotrailer.utils.AppUtils;
-
-import java.util.Random;
 
 import javax.inject.Inject;
 
@@ -105,6 +100,9 @@ public class DetailActivity extends DaggerAppCompatActivity {
                 }
             }
         });
+
+        mDetailViewModel.setBinding(mActivityDetailBinding);
+        mDetailViewModel.setResults(results);
     }
 
     private void showCastCrew(CastCrewResponse castCrewResponse) {
@@ -113,24 +111,12 @@ public class DetailActivity extends DaggerAppCompatActivity {
     }
 
     private void shuffleVideo(CastCrewResponse castCrewResponse) {
-        mActivityDetailBinding.ibPlay.setOnClickListener(v -> {
-            Random rnd = new Random();
-            int rndVideo = rnd.nextInt(castCrewResponse.getVideos().getVideoResults().size() - 1);
-            String key = castCrewResponse.getVideos().getVideoResults().get(rndVideo).getKey();
-
-            Intent youtubeIntent = new Intent(Intent.ACTION_VIEW);
-            youtubeIntent.setData(Uri.parse("vnd.youtube:" + key));
-
-            if (youtubeIntent.resolveActivity(getPackageManager()) != null) {
-                startActivity(youtubeIntent);
-            }
-        });
+        mActivityDetailBinding.ibPlay.setOnClickListener(v -> mDetailViewModel.shuffleVideo(castCrewResponse));
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.detail_menu, menu);
-
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -156,41 +142,15 @@ public class DetailActivity extends DaggerAppCompatActivity {
                 return true;
 
             case R.id.fav:
-                handleItemAddingToDatabase();
+                addToDB();
                 return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    private void handleItemAddingToDatabase() {
-        FavoriteThings favoriteThings = new FavoriteThings(
-                results.getId(),
-                results.getPosterPath(),
-                (!TextUtils.isEmpty(results.getReleaseDate()) ? results.getReleaseDate().substring(0, 4) : results.getFirstAirDate().substring(0, 4)),
-                (!TextUtils.isEmpty(results.getName()) ? results.getName() : results.getTitle()),
-                results.getVoteAverage()
-        );
-
-        favoriteThingsRepository.insertOrThrow(favoriteThings, results.getId(), result -> {
-            if (result) {
-                Snackbar snackbar = Snackbar.make(mActivityDetailBinding.clDetail,
-                        String.format(getString(R.string.constraint_exception_text),
-                                (!TextUtils.isEmpty(results.getName()) ? results.getName() : results.getTitle())), Snackbar.LENGTH_SHORT);
-
-                snackbar.setAction(getString(R.string.dismiss_action_text), null);
-
-                snackbar.show();
-            } else {
-                Snackbar snackbar = Snackbar.make(mActivityDetailBinding.clDetail,
-                        String.format(getString(R.string.database_adding_info_text),
-                                (!TextUtils.isEmpty(results.getName()) ? results.getName() : results.getTitle())), Snackbar.LENGTH_SHORT);
-
-                snackbar.setAction(getString(R.string.dismiss_action_text), null);
-
-                snackbar.show();
-            }
-        });
+    private void addToDB() {
+        mDetailViewModel.addToDB();
     }
 
     @Override

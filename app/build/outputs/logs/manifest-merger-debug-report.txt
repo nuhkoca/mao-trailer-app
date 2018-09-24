@@ -4,40 +4,40 @@ ADDED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidMa
 INJECTED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml:2:1-38:12
 INJECTED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml:2:1-38:12
 INJECTED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml:2:1-38:12
-MERGED from [com.android.databinding:adapters:3.1.4] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/adapters-3.1.4.aar/56d968f2e53019d00291ba7a2a031e66/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.databinding:library:3.1.4] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/library-3.1.4.aar/ece7b1c1ac16e154a43cafa81a3314da/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:design:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/86f44cd6e170b462c7fd9b3e55d10a62/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.dagger:dagger-android-support:2.16] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.16.aar/3e8bb9c507bcd553bedc24a7fb253193/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/73953c056ca2df0467ecc05982516e10/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/c0ce74a25422dd82ee8713c9125aec52/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/13c09d1baec53ea91abf0390db60b648/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.paging:runtime:1.0.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.0.1.aar/4227f7a289fac9b3cf53de9d46e1ad2d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/9e528ca731aa850044aad87f3021ebbd/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:palette-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/palette-v7-27.1.1.aar/42cef74f91f84be02a13d8946392b609/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/12b5f538b3af1ef7fd1019f0e075e4d6/AndroidManifest.xml:2:1-11:12
-MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/7d7565053e0698f5e0d7d12ca6cb5649/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/c7725273138201688d50bedf24932d2c/AndroidManifest.xml:17:1-30:12
-MERGED from [com.google.dagger:dagger-android:2.16] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/dagger-android-2.16.aar/e673e1040bbf8a0fbf52ce4d84a4ff4f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/timber-4.7.1.aar/7f16c507de02b0cce9d93428e28b8873/AndroidManifest.xml:2:1-9:12
-MERGED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/44cec6ce59988c0d009793c784e39a80/AndroidManifest.xml:2:1-16:12
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/71ad353e490c113214af91fab8f45ba0/AndroidManifest.xml:2:1-13:12
-MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.0.aar/3ed1a60599744822c9dfdf2c191326c1/AndroidManifest.xml:15:1-20:12
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/79530f456026f925b1d8479d3c51cf8e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4c48b454922563aa8f7f68e0a6da290f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/8f7fa6f2446ede8e2545f342c0f962a8/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/095d0d2235f8fcba55708e48006b4db0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/37e8f7e696fe5bf813c8e2261e8822a5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/970767186026ec9cb59163101fb957f8/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/baa5c1886ce25b2156cabf760929592b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c41c0cf72493ae43e9c39d7162de1820/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/273a19cbeb8945ca467c279a708e962e/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/5304ac1cbe39163a3b2793de53c2302a/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.persistence:db:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/6dc08caefc0e62683ac436b5309fb6b1/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6728b552022f705b7bffd8363b9d065e/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/607f4762b61977b6e90086bb7a4c6adc/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/18313e5bb20312a4c85c93a10bf4a9b5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e2a02aabd9069295c4a7e7a19ebe6258/AndroidManifest.xml:2:1-11:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fe9468a14911eb87b51e63779eb1ef57/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.databinding:adapters:3.3.0-alpha10] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/adapters-3.3.0-alpha10.aar/6dd0c31af754abb57565c50e5bc2a49f/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.databinding:library:3.3.0-alpha10] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/library-3.3.0-alpha10.aar/13b148bfb96b6d50a6fa0b2e879fe5bb/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/87955198c62f69927937fd9ac5571d2e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.dagger:dagger-android-support:2.16] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.16.aar/512b423531dfc06ce7b188e6542c1a02/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0651f16d85dfe37627515941ab2f6b23/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/7fc37691d075faddba7ff13cde3e09da/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/b6f013c1addfe2c72434eedc9cd390d7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.paging:runtime:1.0.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.0.1.aar/7fc1bb8d4bbc9657a03ba9e0201c6393/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/d5db9d834b0fbc65945b6d24db2b4905/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:palette-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/palette-v7-27.1.1.aar/7273e356efb726656a9a78dcc63761ed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9220f15647f472d08c8b5cf0e751cd04/AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f6cf5ba78082642df93e555f0f9a9cfb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8b3ba339af02408d792136f1a80fd8e4/AndroidManifest.xml:17:1-30:12
+MERGED from [com.google.dagger:dagger-android:2.16] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/dagger-android-2.16.aar/3f63fdcec3685878cd23f41174a6ea8d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/timber-4.7.1.aar/541f13117b3f34d1c9e9d92fe8542267/AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/7571db8658232b66653163901acae2ec/AndroidManifest.xml:2:1-16:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/7143176a5e2b2cea135d7903c391ec8b/AndroidManifest.xml:2:1-13:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.0.aar/dba2c4e5184c28848e7b7434c4524058/AndroidManifest.xml:15:1-20:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/79b74bb64697fbbb913e7ac06dac598a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/270950847fa485debf18aea82e8d09ad/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/e4a05626c125664d793d8dc5faf77292/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/1c89c3c8711b9d4e8672a55aef8273ec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/42403d3b32cda3a77c62df143abde71a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/ed6b1e48e6839b7dfe57e3ca15098a8a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/ec520f84abead2b475f60b5173d0e9f1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/138b24221543fbf9ee85033694929cca/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/17e0e83556934084177c8addb22692ff/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/4a45bc6255c5124b18098fbaf9ca93bb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/a253eee26590a27e131b87758c7c8362/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/9e5b4c5a331d839282129ea5c9d89e09/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7becffe9f240fab00b9fb236027ca5fc/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f4cbba61262814b844c55d0f7d99efd3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/1ed5b41749f2b3355e6875ee338c6165/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e1fb5770de1076d6f2b0ed14170fc50a/AndroidManifest.xml:2:1-11:12
 INJECTED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml:2:1-38:12
 INJECTED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml:2:1-38:12
 INJECTED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml:2:1-38:12
@@ -67,18 +67,18 @@ ADDED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidMa
 		ADDED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml:7:22-64
 application
 ADDED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml:9:5-36:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/12b5f538b3af1ef7fd1019f0e075e4d6/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/12b5f538b3af1ef7fd1019f0e075e4d6/AndroidManifest.xml:9:5-20
-MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/c7725273138201688d50bedf24932d2c/AndroidManifest.xml:22:5-28:19
-MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/c7725273138201688d50bedf24932d2c/AndroidManifest.xml:22:5-28:19
-MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/timber-4.7.1.aar/7f16c507de02b0cce9d93428e28b8873/AndroidManifest.xml:7:5-20
-MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/timber-4.7.1.aar/7f16c507de02b0cce9d93428e28b8873/AndroidManifest.xml:7:5-20
-MERGED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/44cec6ce59988c0d009793c784e39a80/AndroidManifest.xml:10:5-14:19
-MERGED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/44cec6ce59988c0d009793c784e39a80/AndroidManifest.xml:10:5-14:19
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/71ad353e490c113214af91fab8f45ba0/AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/71ad353e490c113214af91fab8f45ba0/AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e2a02aabd9069295c4a7e7a19ebe6258/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e2a02aabd9069295c4a7e7a19ebe6258/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9220f15647f472d08c8b5cf0e751cd04/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9220f15647f472d08c8b5cf0e751cd04/AndroidManifest.xml:9:5-20
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8b3ba339af02408d792136f1a80fd8e4/AndroidManifest.xml:22:5-28:19
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8b3ba339af02408d792136f1a80fd8e4/AndroidManifest.xml:22:5-28:19
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/timber-4.7.1.aar/541f13117b3f34d1c9e9d92fe8542267/AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/timber-4.7.1.aar/541f13117b3f34d1c9e9d92fe8542267/AndroidManifest.xml:7:5-20
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/7571db8658232b66653163901acae2ec/AndroidManifest.xml:10:5-14:19
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/7571db8658232b66653163901acae2ec/AndroidManifest.xml:10:5-14:19
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/7143176a5e2b2cea135d7903c391ec8b/AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/7143176a5e2b2cea135d7903c391ec8b/AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e1fb5770de1076d6f2b0ed14170fc50a/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e1fb5770de1076d6f2b0ed14170fc50a/AndroidManifest.xml:9:5-20
 	android:supportsRtl
 		ADDED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml:15:9-35
 	android:label
@@ -135,74 +135,74 @@ uses-sdk
 INJECTED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml
 INJECTED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml
-MERGED from [com.android.databinding:adapters:3.1.4] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/adapters-3.1.4.aar/56d968f2e53019d00291ba7a2a031e66/AndroidManifest.xml:22:5-44
-MERGED from [com.android.databinding:adapters:3.1.4] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/adapters-3.1.4.aar/56d968f2e53019d00291ba7a2a031e66/AndroidManifest.xml:22:5-44
-MERGED from [com.android.databinding:library:3.1.4] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/library-3.1.4.aar/ece7b1c1ac16e154a43cafa81a3314da/AndroidManifest.xml:22:5-44
-MERGED from [com.android.databinding:library:3.1.4] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/library-3.1.4.aar/ece7b1c1ac16e154a43cafa81a3314da/AndroidManifest.xml:22:5-44
-MERGED from [com.android.support:design:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/86f44cd6e170b462c7fd9b3e55d10a62/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/86f44cd6e170b462c7fd9b3e55d10a62/AndroidManifest.xml:20:5-44
-MERGED from [com.google.dagger:dagger-android-support:2.16] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.16.aar/3e8bb9c507bcd553bedc24a7fb253193/AndroidManifest.xml:20:5-44
-MERGED from [com.google.dagger:dagger-android-support:2.16] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.16.aar/3e8bb9c507bcd553bedc24a7fb253193/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/73953c056ca2df0467ecc05982516e10/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/73953c056ca2df0467ecc05982516e10/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/c0ce74a25422dd82ee8713c9125aec52/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/c0ce74a25422dd82ee8713c9125aec52/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/13c09d1baec53ea91abf0390db60b648/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/13c09d1baec53ea91abf0390db60b648/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.paging:runtime:1.0.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.0.1.aar/4227f7a289fac9b3cf53de9d46e1ad2d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.paging:runtime:1.0.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.0.1.aar/4227f7a289fac9b3cf53de9d46e1ad2d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/9e528ca731aa850044aad87f3021ebbd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/9e528ca731aa850044aad87f3021ebbd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:palette-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/palette-v7-27.1.1.aar/42cef74f91f84be02a13d8946392b609/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:palette-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/palette-v7-27.1.1.aar/42cef74f91f84be02a13d8946392b609/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/12b5f538b3af1ef7fd1019f0e075e4d6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/12b5f538b3af1ef7fd1019f0e075e4d6/AndroidManifest.xml:5:5-7:41
-MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/7d7565053e0698f5e0d7d12ca6cb5649/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/7d7565053e0698f5e0d7d12ca6cb5649/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/c7725273138201688d50bedf24932d2c/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/c7725273138201688d50bedf24932d2c/AndroidManifest.xml:20:5-44
-MERGED from [com.google.dagger:dagger-android:2.16] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/dagger-android-2.16.aar/e673e1040bbf8a0fbf52ce4d84a4ff4f/AndroidManifest.xml:20:5-44
-MERGED from [com.google.dagger:dagger-android:2.16] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/dagger-android-2.16.aar/e673e1040bbf8a0fbf52ce4d84a4ff4f/AndroidManifest.xml:20:5-44
-MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/timber-4.7.1.aar/7f16c507de02b0cce9d93428e28b8873/AndroidManifest.xml:5:5-43
-MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/timber-4.7.1.aar/7f16c507de02b0cce9d93428e28b8873/AndroidManifest.xml:5:5-43
-MERGED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/44cec6ce59988c0d009793c784e39a80/AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/44cec6ce59988c0d009793c784e39a80/AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/71ad353e490c113214af91fab8f45ba0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/71ad353e490c113214af91fab8f45ba0/AndroidManifest.xml:7:5-9:41
-MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.0.aar/3ed1a60599744822c9dfdf2c191326c1/AndroidManifest.xml:18:5-43
-MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.0.aar/3ed1a60599744822c9dfdf2c191326c1/AndroidManifest.xml:18:5-43
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/79530f456026f925b1d8479d3c51cf8e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/79530f456026f925b1d8479d3c51cf8e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4c48b454922563aa8f7f68e0a6da290f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/4c48b454922563aa8f7f68e0a6da290f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/8f7fa6f2446ede8e2545f342c0f962a8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/8f7fa6f2446ede8e2545f342c0f962a8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/095d0d2235f8fcba55708e48006b4db0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/095d0d2235f8fcba55708e48006b4db0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/37e8f7e696fe5bf813c8e2261e8822a5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/37e8f7e696fe5bf813c8e2261e8822a5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/970767186026ec9cb59163101fb957f8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/970767186026ec9cb59163101fb957f8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/baa5c1886ce25b2156cabf760929592b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/baa5c1886ce25b2156cabf760929592b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c41c0cf72493ae43e9c39d7162de1820/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c41c0cf72493ae43e9c39d7162de1820/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/273a19cbeb8945ca467c279a708e962e/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/273a19cbeb8945ca467c279a708e962e/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/5304ac1cbe39163a3b2793de53c2302a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/5304ac1cbe39163a3b2793de53c2302a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.persistence:db:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/6dc08caefc0e62683ac436b5309fb6b1/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.persistence:db:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/6dc08caefc0e62683ac436b5309fb6b1/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6728b552022f705b7bffd8363b9d065e/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6728b552022f705b7bffd8363b9d065e/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/607f4762b61977b6e90086bb7a4c6adc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/607f4762b61977b6e90086bb7a4c6adc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/18313e5bb20312a4c85c93a10bf4a9b5/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/18313e5bb20312a4c85c93a10bf4a9b5/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e2a02aabd9069295c4a7e7a19ebe6258/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e2a02aabd9069295c4a7e7a19ebe6258/AndroidManifest.xml:5:5-7:41
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fe9468a14911eb87b51e63779eb1ef57/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/fe9468a14911eb87b51e63779eb1ef57/AndroidManifest.xml:20:5-44
+MERGED from [com.android.databinding:adapters:3.3.0-alpha10] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/adapters-3.3.0-alpha10.aar/6dd0c31af754abb57565c50e5bc2a49f/AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:adapters:3.3.0-alpha10] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/adapters-3.3.0-alpha10.aar/6dd0c31af754abb57565c50e5bc2a49f/AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.3.0-alpha10] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/library-3.3.0-alpha10.aar/13b148bfb96b6d50a6fa0b2e879fe5bb/AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.3.0-alpha10] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/library-3.3.0-alpha10.aar/13b148bfb96b6d50a6fa0b2e879fe5bb/AndroidManifest.xml:22:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/87955198c62f69927937fd9ac5571d2e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/87955198c62f69927937fd9ac5571d2e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android-support:2.16] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.16.aar/512b423531dfc06ce7b188e6542c1a02/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android-support:2.16] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/dagger-android-support-2.16.aar/512b423531dfc06ce7b188e6542c1a02/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0651f16d85dfe37627515941ab2f6b23/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0651f16d85dfe37627515941ab2f6b23/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/7fc37691d075faddba7ff13cde3e09da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/7fc37691d075faddba7ff13cde3e09da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/b6f013c1addfe2c72434eedc9cd390d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/b6f013c1addfe2c72434eedc9cd390d7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.paging:runtime:1.0.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.0.1.aar/7fc1bb8d4bbc9657a03ba9e0201c6393/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.paging:runtime:1.0.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.0.1.aar/7fc1bb8d4bbc9657a03ba9e0201c6393/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/d5db9d834b0fbc65945b6d24db2b4905/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/d5db9d834b0fbc65945b6d24db2b4905/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:palette-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/palette-v7-27.1.1.aar/7273e356efb726656a9a78dcc63761ed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:palette-v7:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/palette-v7-27.1.1.aar/7273e356efb726656a9a78dcc63761ed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9220f15647f472d08c8b5cf0e751cd04/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/9220f15647f472d08c8b5cf0e751cd04/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f6cf5ba78082642df93e555f0f9a9cfb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f6cf5ba78082642df93e555f0f9a9cfb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8b3ba339af02408d792136f1a80fd8e4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8b3ba339af02408d792136f1a80fd8e4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android:2.16] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/dagger-android-2.16.aar/3f63fdcec3685878cd23f41174a6ea8d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android:2.16] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/dagger-android-2.16.aar/3f63fdcec3685878cd23f41174a6ea8d/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/timber-4.7.1.aar/541f13117b3f34d1c9e9d92fe8542267/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/timber-4.7.1.aar/541f13117b3f34d1c9e9d92fe8542267/AndroidManifest.xml:5:5-43
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/7571db8658232b66653163901acae2ec/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/7571db8658232b66653163901acae2ec/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/7143176a5e2b2cea135d7903c391ec8b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/7143176a5e2b2cea135d7903c391ec8b/AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.0.aar/dba2c4e5184c28848e7b7434c4524058/AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.0.aar/dba2c4e5184c28848e7b7434c4524058/AndroidManifest.xml:18:5-43
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/79b74bb64697fbbb913e7ac06dac598a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/79b74bb64697fbbb913e7ac06dac598a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/270950847fa485debf18aea82e8d09ad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/270950847fa485debf18aea82e8d09ad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/e4a05626c125664d793d8dc5faf77292/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/e4a05626c125664d793d8dc5faf77292/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/1c89c3c8711b9d4e8672a55aef8273ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/1c89c3c8711b9d4e8672a55aef8273ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/42403d3b32cda3a77c62df143abde71a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/42403d3b32cda3a77c62df143abde71a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/ed6b1e48e6839b7dfe57e3ca15098a8a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/ed6b1e48e6839b7dfe57e3ca15098a8a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/ec520f84abead2b475f60b5173d0e9f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/ec520f84abead2b475f60b5173d0e9f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/138b24221543fbf9ee85033694929cca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/138b24221543fbf9ee85033694929cca/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/17e0e83556934084177c8addb22692ff/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/17e0e83556934084177c8addb22692ff/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/4a45bc6255c5124b18098fbaf9ca93bb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.1.aar/4a45bc6255c5124b18098fbaf9ca93bb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/a253eee26590a27e131b87758c7c8362/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/db-1.1.1.aar/a253eee26590a27e131b87758c7c8362/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/9e5b4c5a331d839282129ea5c9d89e09/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/9e5b4c5a331d839282129ea5c9d89e09/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7becffe9f240fab00b9fb236027ca5fc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7becffe9f240fab00b9fb236027ca5fc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f4cbba61262814b844c55d0f7d99efd3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f4cbba61262814b844c55d0f7d99efd3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/1ed5b41749f2b3355e6875ee338c6165/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/1ed5b41749f2b3355e6875ee338c6165/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e1fb5770de1076d6f2b0ed14170fc50a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/e1fb5770de1076d6f2b0ed14170fc50a/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml
 INJECTED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -214,18 +214,18 @@ INJECTED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/Androi
 		ADDED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/src/main/AndroidManifest.xml
 provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/c7725273138201688d50bedf24932d2c/AndroidManifest.xml:23:9-27:43
+ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8b3ba339af02408d792136f1a80fd8e4/AndroidManifest.xml:23:9-27:43
 	android:authorities
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/c7725273138201688d50bedf24932d2c/AndroidManifest.xml:25:13-68
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8b3ba339af02408d792136f1a80fd8e4/AndroidManifest.xml:25:13-68
 	android:multiprocess
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/c7725273138201688d50bedf24932d2c/AndroidManifest.xml:27:13-40
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8b3ba339af02408d792136f1a80fd8e4/AndroidManifest.xml:27:13-40
 	android:exported
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/c7725273138201688d50bedf24932d2c/AndroidManifest.xml:26:13-37
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8b3ba339af02408d792136f1a80fd8e4/AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/c7725273138201688d50bedf24932d2c/AndroidManifest.xml:24:13-83
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/8b3ba339af02408d792136f1a80fd8e4/AndroidManifest.xml:24:13-83
 meta-data#com.bumptech.glide.integration.okhttp3.OkHttpGlideModule
-ADDED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/44cec6ce59988c0d009793c784e39a80/AndroidManifest.xml:11:9-13:43
+ADDED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/7571db8658232b66653163901acae2ec/AndroidManifest.xml:11:9-13:43
 	android:value
-		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/44cec6ce59988c0d009793c784e39a80/AndroidManifest.xml:13:13-40
+		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/7571db8658232b66653163901acae2ec/AndroidManifest.xml:13:13-40
 	android:name
-		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/44cec6ce59988c0d009793c784e39a80/AndroidManifest.xml:12:13-84
+		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.7.1] /Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/okhttp3-integration-4.7.1.aar/7571db8658232b66653163901acae2ec/AndroidManifest.xml:12:13-84

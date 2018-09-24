@@ -18,6 +18,7 @@ public final class Constants {
     public static final int DB_START_VERSION = 2;
     public static final int DB_END_VERSION = 3;
     public static final String MAO_DATABASE_NAME = "mao.db";
+    public static final String YOUTUBE_APP_PREFIX = "vnd.youtube:";
 
     public Constants() {
         throw new AssertionError();

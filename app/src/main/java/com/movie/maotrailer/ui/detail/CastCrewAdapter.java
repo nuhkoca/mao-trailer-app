@@ -34,7 +34,7 @@ public class CastCrewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if (mCredits != null) {
-            if (mCredits.getCrews().size() != 0) {
+            if (mCredits.getCrews() != null && mCredits.getCrews().size() != 0) {
                 if (position == 0) {
                     ((CastCrewViewHolder) holder).bindTo(mCredits.getCrews().get(position));
                 } else {
@@ -49,7 +49,7 @@ public class CastCrewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public int getItemCount() {
         if (mCredits != null) {
-            if (mCredits.getCrews().size() != 0) {
+            if (mCredits.getCrews() != null && mCredits.getCrews().size() != 0) {
                 return mCredits.getCasts().size() + 1;
             } else {
                 return mCredits.getCasts().size();

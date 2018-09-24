@@ -15,6 +15,7 @@ public class FavoriteViewModel extends ViewModel {
 
     private LiveData<PagedList<FavoriteThings>> mFavoriteThingsList;
     private FavoriteThingsRepository favoriteThingsRepository;
+    private LiveData<Integer> mDataCount;
 
     @Inject
     FavoriteViewModel(FavoriteThingsRepository favoriteThingsRepository) {
@@ -26,6 +27,7 @@ public class FavoriteViewModel extends ViewModel {
                 .setPageSize(Constants.PAGE_SIZE).build();
 
         mFavoriteThingsList = new LivePagedListBuilder<>(favoriteThingsRepository.getAll(), config).build();
+        mDataCount = favoriteThingsRepository.getCount();
     }
 
     public LiveData<PagedList<FavoriteThings>> getResult() {
@@ -39,8 +41,13 @@ public class FavoriteViewModel extends ViewModel {
                 .setPageSize(Constants.PAGE_SIZE).build();
 
         mFavoriteThingsList = new LivePagedListBuilder<>(favoriteThingsRepository.getAll(), config).build();
+        mDataCount = favoriteThingsRepository.getCount();
 
         return mFavoriteThingsList;
+    }
+
+    public LiveData<Integer> getDataCount() {
+        return mDataCount;
     }
 
     public void deleteItem(FavoriteThings favoriteThings) {

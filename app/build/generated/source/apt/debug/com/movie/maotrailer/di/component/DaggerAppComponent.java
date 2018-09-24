@@ -140,8 +140,6 @@ public final class DaggerAppComponent implements AppComponent {
 
   private TvViewModel_Factory tvViewModelProvider;
 
-  private DetailViewModel_Factory detailViewModelProvider;
-
   private Provider<Application> applicationProvider;
 
   private Provider<Migration> provideMigrationProvider;
@@ -151,6 +149,8 @@ public final class DaggerAppComponent implements AppComponent {
   private RoomModule_ProvideFavoriteThingsDaoFactory provideFavoriteThingsDaoProvider;
 
   private FavoriteThingsRepository_Factory favoriteThingsRepositoryProvider;
+
+  private DetailViewModel_Factory detailViewModelProvider;
 
   private FavoriteViewModel_Factory favoriteViewModelProvider;
 
@@ -355,9 +355,6 @@ public final class DaggerAppComponent implements AppComponent {
         MovieViewModel_Factory.create(itemDataSourceFactoryProvider, AppsExecutor_Factory.create());
     this.tvViewModelProvider =
         TvViewModel_Factory.create(itemDataSourceFactoryProvider, AppsExecutor_Factory.create());
-    this.detailViewModelProvider =
-        DetailViewModel_Factory.create(
-            endpointRepositoryProvider, provideCompositeDisposableProvider);
     this.applicationProvider = InstanceFactory.create(builder.application);
     this.provideMigrationProvider =
         DoubleCheck.provider(RoomModule_ProvideMigrationFactory.create(builder.roomModule));
@@ -371,6 +368,12 @@ public final class DaggerAppComponent implements AppComponent {
     this.favoriteThingsRepositoryProvider =
         FavoriteThingsRepository_Factory.create(
             provideFavoriteThingsDaoProvider, AppsExecutor_Factory.create());
+    this.detailViewModelProvider =
+        DetailViewModel_Factory.create(
+            applicationProvider,
+            endpointRepositoryProvider,
+            provideCompositeDisposableProvider,
+            favoriteThingsRepositoryProvider);
     this.favoriteViewModelProvider =
         FavoriteViewModel_Factory.create(favoriteThingsRepositoryProvider);
     this.mapOfClassOfAndProviderOfViewModelProvider =

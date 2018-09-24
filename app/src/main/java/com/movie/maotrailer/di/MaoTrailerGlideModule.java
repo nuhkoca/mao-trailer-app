@@ -67,4 +67,9 @@ public class MaoTrailerGlideModule extends AppGlideModule {
                 .dontAnimate()
                 .skipMemoryCache(false);
     }
+
+    @Override
+    public boolean isManifestParsingEnabled() {
+        return false;
+    }
 }

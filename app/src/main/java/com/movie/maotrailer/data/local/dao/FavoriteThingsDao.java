@@ -1,5 +1,6 @@
 package com.movie.maotrailer.data.local.dao;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.paging.DataSource;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
@@ -14,6 +15,9 @@ public interface FavoriteThingsDao {
 
     @Query("SELECT iid FROM favorite_things WHERE iid = :iid LIMIT 1")
     int getItemById(int iid);
+
+    @Query("SELECT count(*) FROM favorite_things")
+    LiveData<Integer> getCount();
 
     @Insert
     void insertItem(FavoriteThings favoriteThings);

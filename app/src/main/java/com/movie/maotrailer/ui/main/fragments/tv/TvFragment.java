@@ -223,6 +223,12 @@ public class TvFragment extends DaggerFragment implements IRetryListener,
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        Objects.requireNonNull(getActivity()).supportStartPostponedEnterTransition();
+    }
+
+    @Override
     public void onDetach() {
         if (mTvViewModel != null) {
             mTvViewModel.onCleared();

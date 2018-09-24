@@ -4,7 +4,7 @@
             "outputFile": "/Users/nuhkoca/Desktop/AndroidWorks/MaoTrailer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/73953c056ca2df0467ecc05982516e10/res/values-v24/values-v24.xml",
+                    "source": "/Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0651f16d85dfe37627515941ab2f6b23/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/79530f456026f925b1d8479d3c51cf8e/res/values-v24/values-v24.xml",
+                    "source": "/Users/nuhkoca/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/ed6b1e48e6839b7dfe57e3ca15098a8a/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
